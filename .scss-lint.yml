@@ -1,0 +1,2 @@
+scss_files: "./**/*.css"
+exclude: "_sass/**"
