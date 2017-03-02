@@ -401,6 +401,10 @@
   },
     
   "_GLOBAL_CONFIG": {
+    "source": {
+      "discovery.v2": "./_data/orgs/discovery-api/v2/api.json",
+      "publish.v1": "./_data/orgs/publish-api/v1/api.json"
+    },
     "copyBtn": {
       "id": true,
       "url": true

@@ -48,6 +48,10 @@ class AppViewModel {
 		this.selectedParams = ko.observableArray([]).syncWith('SELECTED_PARAMS');
 		this.selectedMethodData = ko.observable(this.getMethodData({}));
 
+		if (Object.keys(config._GLOBAL_CONFIG.source).length) {
+			if ()
+			this.source = require('')
+		}
 		this.initValidation();
 
 		// computed
