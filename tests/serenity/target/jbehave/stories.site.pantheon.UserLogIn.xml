@@ -1,0 +1,30 @@
+<story path="stories/site/pantheon/UserLogIn.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Pantheon User LonIn Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<lifecycle keyword="Lifecycle:">
+<before keyword="Before:">
+<step>Given open Home page</step>
+<step>When navigate to Pantheon LogIn page from Home page</step>
+</before>
+</lifecycle>
+<scenario keyword="Scenario:" title="(developer-acct.ticketmaster.com/user/login) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">Then check general page elements for Pantheon User LogIn page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(developer-acct.ticketmaster.com/user/login) [2.2.3.2 Login - Username/Email field - enter invalid username]">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">When login to Pantheon with <parameter>invaliduserName</parameter> and <parameter>1234567</parameter></step>
+<step outcome="successful">Then the message <parameter>Sorry, unrecognized username or password. Have you forgotten your password?</parameter> is displayed</step>
+</scenario>
+<scenario keyword="Scenario:" title="(developer-acct.ticketmaster.com/user/login) [2.2.3.8 Login - OpenID field - invalid OpenID]">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">When navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">When login to Pantheon using OpenID <parameter>invalidOpenID</parameter></step>
+<step outcome="successful">Then the message <parameter>Sorry, that is not a valid OpenID. Ensure you have spelled your ID correctly.</parameter> is displayed</step>
+</scenario>
+</story>

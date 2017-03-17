@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Countdown widget","(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Full-width mode","ERROR","2017-03-17T09:03:40.574Z","0.0","14.98"
+"Countdown widget","(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Orientations","ERROR","2017-03-17T09:04:41.544Z","0.0","30.83"
+"Countdown widget","(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Resolutions","ERROR","2017-03-17T09:03:55.844Z","0.0","45.7"
+"User apps","(Pantheon|Delete App) Delete App positive [2.1.9 Delete application]","FAILURE","2017-03-17T08:51:28.775Z","0.0","21.16"
+"User apps","(Pantheon|Edit App) Edit app positive [2.1.8 Edit application]","FAILURE","2017-03-17T08:50:46.186Z","0.0","42.51"

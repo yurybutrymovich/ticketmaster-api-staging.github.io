@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>stories.site.widgets.MapWidget</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/MapWidget.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> setup Map Widget</div>
+<div class="element asA"><span class="keyword asA">As a</span> user of Ticketmaster Developer Portal</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) [3.7.1 Map widget : Check that required fields are not empty]</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">Then the required fields are not empty on the Map Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) [3.7.2 Map widget : Embedded code functionality works properly]</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">And change all possible fields on the Map Widget page:
+<span class="step parameter"><table>
+<thead>
+<tr>
+<th>apiKey</th><th>keyWord</th><th>zipCode</th><th>city</th><th>attractionId</th><th>venueId</th><th>promoterId</th><th>source</th><th>countryCode</th><th>classificationName</th><th>eventCount</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>apikeys</td><td>adele</td><td>90015</td><td>York</td><td>333444</td><td>222111</td><td>9999</td><td>ticketmaster</td><td>Canada</td><td>movies</td><td>50</td></tr>
+</tbody>
+</table>
+</span></div>
+<div class="step successful">And store all fields values on the Map Widget page</div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored values on the Map Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) [3.7.3 Map widget : Check RESET button functionality]</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">And store values on Map Widget page: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+<div class="step successful">And change values for on Map Widget page: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+<div class="step successful">When click reset button</div>
+<div class="step successful">Then values equals to stored values of fields on Map Widget page: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) [3.7.4 Map widget : Check RESET button functionality on embedded pop-up window]</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">And store values on Map Widget page: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+<div class="step successful">And change values for on Map Widget page: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+<div class="step successful">When click reset button</div>
+<div class="step successful">And click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code on Map Widget contains stored values of: <span class="step parameter">apiKey,keyword,zipCode</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) [3.7.7 Map widget : Check links]</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">When I click on the 'Get your own' link to get api key</div>
+<div class="step successful">Then The page is opened with url <span class="step parameter">https://developer-acct.ticketmaster.com</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/map/) Event message - Check event message for invalid API Key</h2>
+<div class="step successful">Given open Map Widget page</div>
+<div class="step successful">And enter custom ApiKey <span class="step parameter">invalidApiKey123</span></div>
+<div class="step successful">Then the event message is shown &quot;No results were found&quot;</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

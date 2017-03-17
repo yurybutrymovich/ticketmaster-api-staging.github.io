@@ -1,0 +1,191 @@
+<story path="stories/site/pantheon/UserApps.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">manage my Apps</inOrderTo>
+  <asA keyword="As a">user of Ticket Master Developer portal</asA>
+  <iWantTo keyword="I want to">perform CRUD operations with my apps</iWantTo>
+</narrative>
+<lifecycle keyword="Lifecycle:">
+<before keyword="Before:">
+<step>Given open Home page</step>
+<step>And navigate to Pantheon LogIn page from Home page</step>
+<step>And navigate to Pantheon User Account page from LogIn page</step>
+</before>
+</lifecycle>
+<scenario keyword="Scenario:" title="(developer-acct.ticketmaster.com/user/1554/apps/add) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">When navigate to Pantheon Add New App page from User Account page</step>
+<step outcome="successful">Then check general page elements for Pantheon Add New App page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(Pantheon|Add new App) Add new App negative [2.1.15 Add New App - The required field is empty]">
+<examples keyword="Examples:">
+<step>Given navigate to Pantheon Add New App page from User Account page</step>
+<step>When enter to the field &lt;appFormField&gt; value &lt;appName&gt;</step>
+<step>When save changes on Edit App Page</step>
+<step>Then the message &lt;message&gt; is displayed</step>
+<parameters>
+<names><name>appFormField</name><name>appName</name><name>message</name></names>
+<values><value>Application name</value><value>mamaxF-Appd2</value><value>Callback URL is required for Oauth Product</value></values>
+<values><value>Redirect URI</value><value>https://ticketmaster.com</value><value>Application name field is required.</value></values>
+</parameters>
+
+<example keyword="Example:">{appFormField=Application name, appName=mamaxF-Appd2, message=Callback URL is required for Oauth Product}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given navigate to Pantheon Add New App page from User Account page</step>
+<step outcome="successful">When enter to the field <parameter>Application name</parameter> value <parameter>mamaxF-Appd2</parameter></step>
+<step outcome="successful">When save changes on Edit App Page</step>
+<step outcome="successful">Then the message <parameter>Callback URL is required for Oauth Product</parameter> is displayed</step>
+
+<example keyword="Example:">{appFormField=Redirect URI, appName=https://ticketmaster.com, message=Application name field is required.}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given navigate to Pantheon Add New App page from User Account page</step>
+<step outcome="successful">When enter to the field <parameter>Redirect URI</parameter> value <parameter>https://ticketmaster.com</parameter></step>
+<step outcome="successful">When save changes on Edit App Page</step>
+<step outcome="successful">Then the message <parameter>Application name field is required.</parameter> is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(Pantheon|Add new App) [2.1.5 Add new App with values positive]">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given navigate to Pantheon Add New App page from User Account page</step>
+<step outcome="successful">When enter to the field <parameter>Application name</parameter> value <parameter>uniqueApp</parameter></step>
+<step outcome="successful">When enter to the field <parameter>Redirect URI</parameter> value <parameter>https://oauth.ticketmaster.com</parameter></step>
+<step outcome="successful">And save changes on Edit App Page</step>
+<step outcome="successful">Then the message <parameter>App Created!</parameter> is displayed</step>
+<step outcome="successful">Then open my Apps page</step>
+<step outcome="successful">And the App is appeared in the list of apps</step>
+</scenario>
+<scenario keyword="Scenario:" title="(Pantheon|Edit App) Edit app with empty required fields negative">
+<examples keyword="Examples:">
+<step>Given open my Apps page</step>
+<step>And open Edit App Page for the first application</step>
+<step>When clear field &lt;appFormField&gt; on Edit App Page</step>
+<step>And save changes on Edit App Page</step>
+<step>Then the message &lt;formError&gt; is displayed</step>
+<parameters>
+<names><name>appFormField</name><name>formError</name></names>
+<values><value>Application name</value><value>Application name field is required.</value></values>
+<values><value>Redirect URI</value><value>Callback URL is required for Oauth Product</value></values>
+</parameters>
+
+<example keyword="Example:">{appFormField=Application name, formError=Application name field is required.}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given open my Apps page</step>
+<step outcome="successful">And open Edit App Page for the first application</step>
+<step outcome="successful">When clear field <parameter>Application name</parameter> on Edit App Page</step>
+<step outcome="successful">And save changes on Edit App Page</step>
+<step outcome="successful">Then the message <parameter>Application name field is required.</parameter> is displayed</step>
+
+<example keyword="Example:">{appFormField=Redirect URI, formError=Callback URL is required for Oauth Product}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given open my Apps page</step>
+<step outcome="successful">And open Edit App Page for the first application</step>
+<step outcome="successful">When clear field <parameter>Redirect URI</parameter> on Edit App Page</step>
+<step outcome="successful">And save changes on Edit App Page</step>
+<step outcome="successful">Then the message <parameter>Callback URL is required for Oauth Product</parameter> is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(Pantheon|Edit App) Edit app positive [2.1.8 Edit application]">
+<examples keyword="Examples:">
+<step>Given open my Apps page</step>
+<step>And open Edit App Page for the first application</step>
+<step>When clear field &lt;appFormField&gt; on Edit App Page</step>
+<step>And enter to the field &lt;appFormField&gt; value &lt;appValue&gt;</step>
+<step>And save changes on Edit App Page</step>
+<step>And the message App Updated! is displayed</step>
+<step>And open my Apps page</step>
+<step>And open Details tab on the application</step>
+<step>Then &lt;detailName&gt; have been applied on Edit App Page with value &lt;appValue&gt;</step>
+<parameters>
+<names><name>appFormField</name><name>appValue</name><name>detailName</name></names>
+<values><value>Application name</value><value>mamax-Appdf</value><value>Application Name</value></values>
+<values><value>Redirect URI</value><value>https://oauth.ticketmaster.com</value><value>Callback URL</value></values>
+</parameters>
+
+<example keyword="Example:">{appFormField=Application name, appValue=mamax-Appdf, detailName=Application Name}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given open my Apps page</step>
+<step outcome="successful">And open Edit App Page for the first application</step>
+<step outcome="successful">When clear field <parameter>Application name</parameter> on Edit App Page</step>
+<step outcome="successful">And enter to the field <parameter>Application name</parameter> value <parameter>mamax-Appdf</parameter></step>
+<step outcome="successful">And save changes on Edit App Page</step>
+<step outcome="successful">And the message <parameter>App Updated!</parameter> is displayed</step>
+<step outcome="successful">And open my Apps page</step>
+<step outcome="successful">And open Details tab on the application</step>
+<step outcome="failed" keyword="FAILED">Then <parameter>Application Name</parameter> have been applied on Edit App Page with value <parameter>mamax-Appdf</parameter><failure>org.junit.ComparisonFailure: expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;</failure></step>
+
+<example keyword="Example:">{appFormField=Redirect URI, appValue=https://oauth.ticketmaster.com, detailName=Callback URL}</example>
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given open my Apps page</step>
+<step outcome="successful">And open Edit App Page for the first application</step>
+<step outcome="successful">When clear field <parameter>Redirect URI</parameter> on Edit App Page</step>
+<step outcome="successful">And enter to the field <parameter>Redirect URI</parameter> value <parameter>https://oauth.ticketmaster.com</parameter></step>
+<step outcome="successful">And save changes on Edit App Page</step>
+<step outcome="successful">And the message <parameter>App Updated!</parameter> is displayed</step>
+<step outcome="successful">And open my Apps page</step>
+<step outcome="successful">And open Details tab on the application</step>
+<step outcome="successful">Then <parameter>Callback URL</parameter> have been applied on Edit App Page with value <parameter>https://oauth.ticketmaster.com</parameter></step>
+</examples>
+<failure>org.junit.ComparisonFailure: expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.pantheon.UserAppsSteps.checkIfChangesAreApplied(UserAppsSteps.java:51)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.CGLIB$checkIfChangesAreApplied$8(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50$$FastClassByCGLIB$$12002a3a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.checkIfChangesAreApplied(&lt;generated&gt;)
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.changesHaveApplied(UserAppsDefinition.java:63)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="(Pantheon|Delete App) Delete App positive [2.1.9 Delete application]">
+<step outcome="successful">Given open Home page</step>
+<step outcome="successful">And navigate to Pantheon LogIn page from Home page</step>
+<step outcome="successful">And navigate to Pantheon User Account page from LogIn page</step>
+<step outcome="successful">Given open my Apps page</step>
+<step outcome="successful">When delete first App</step>
+<step outcome="successful">Then the message <parameter>App Deleted!</parameter> is displayed</step>
+<step outcome="failed" keyword="FAILED">And the predefined app is removed from the list of apps<failure>java.lang.AssertionError</failure></step>
+<failure>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at bla.tm.steps.pantheon.UserAppsSteps.checkIsAppNotExists(UserAppsSteps.java:76)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.CGLIB$checkIsAppNotExists$12(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50$$FastClassByCGLIB$$12002a3a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.checkIsAppNotExists(&lt;generated&gt;)
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.appIsRemovedFromTheListOfApps(UserAppsDefinition.java:84)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)
+...</failure>
+</scenario>
+</story>

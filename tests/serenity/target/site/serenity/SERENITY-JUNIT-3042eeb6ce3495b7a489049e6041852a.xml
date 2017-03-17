@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="6" failures="0" name="Countdown widget" skipped="0" tests="15" time="141.15" timestamp="2017-03-76 09:02:59"><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that required fields are not empty"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Verification of default embed code"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that embed code functionality works properly"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check RESET button functionality"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check RESET button functionality on Embedded Code Pop-up window"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Get new EventId"/><testcase name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check links"/><testcase name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Full-width mode"><error message="Timed out after 5 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</error><system-err>Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+bla.tm.widgets.CountdownWidgetImpl.setFullWidthMode(CountdownWidgetImpl.java:162)
+bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps.setFullWidth(PD_Widget_CountdownSteps.java:169)
+bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToFullWidth(CountdownWidgetDefinition.java:55)
+</system-err></testcase><testcase name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Resolutions"><error message="Timed out after 5 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</error><system-err>Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+bla.tm.widgets.CountdownWidgetImpl.setPosterTheme(CountdownWidgetImpl.java:167)
+bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps.setPosterTheme(PD_Widget_CountdownSteps.java:182)
+bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+</system-err></testcase><testcase name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Orientations"><error message="Timed out after 5 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</error><system-err>Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+bla.tm.widgets.CountdownWidgetImpl.setPosterTheme(CountdownWidgetImpl.java:167)
+bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps.setPosterTheme(PD_Widget_CountdownSteps.java:182)
+bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+</system-err></testcase><testcase name="(/products-and-docs/widgets/countdown/) Event message - Check event message for invalid API Key"/><testcase name="(/products-and-docs/widgets/countdown/) Event message - Check event message for invalid Event ID"/></testsuite>

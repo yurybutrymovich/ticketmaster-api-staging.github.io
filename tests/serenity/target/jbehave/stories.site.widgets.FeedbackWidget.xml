@@ -1,0 +1,82 @@
+<story path="stories/site/widgets/FeedbackWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">send feedback</inOrderTo>
+  <asA keyword="As a">user of Ticketmaster Developer Portal</asA>
+  <iWantTo keyword="I want to">use the feedback widget
+and have ability to send feedback form to support</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(feedback widget) Check that Feedback widget Elements are shown">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="pending" keyword="PENDING">And Feedback widget is not shown</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When click Feedback button of Tutorials Widgets page</step>
+<step outcome="pending" keyword="PENDING">Then Feedback widget elements are shown</step>
+<pendingMethod>@Given(&quot;Feedback widget is not shown&quot;)
+@Pending
+public void givenFeedbackWidgetIsNotShown() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Feedback widget elements are shown&quot;)
+@Pending
+public void thenFeedbackWidgetElementsAreShown() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget Close button">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">When click Feedback button of Tutorials Widgets page</step>
+<step outcome="pending" keyword="PENDING">Then click close button of Feedback widget</step>
+<step outcome="pending" keyword="PENDING">And Feedback widget is not shown</step>
+<pendingMethod>@Then(&quot;click close button of Feedback widget&quot;)
+@Pending
+public void thenClickCloseButtonOfFeedbackWidget() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;Feedback widget is not shown&quot;)
+@Pending
+public void thenFeedbackWidgetIsNotShown() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget error notifications for NAME field">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">And click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">When all fields except Name are populated</step>
+<step outcome="pending" keyword="PENDING">And click send button of Feedback widget</step>
+<step outcome="pending" keyword="PENDING">Then error notification is shown for Feedback widget</step>
+<pendingMethod>@When(&quot;click send button of Feedback widget&quot;)
+@Pending
+public void whenClickSendButtonOfFeedbackWidget() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;error notification is shown for Feedback widget&quot;)
+@Pending
+public void thenErrorNotificationIsShownForFeedbackWidget() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget error notifications for Email field">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">And click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">When all fields except Email are populated</step>
+<step outcome="pending" keyword="PENDING">And click send button of Feedback widget</step>
+<step outcome="pending" keyword="PENDING">Then error notification is shown for Feedback widget</step>
+<pendingMethod>@When(&quot;click send button of Feedback widget&quot;)
+@Pending
+public void whenClickSendButtonOfFeedbackWidget() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;error notification is shown for Feedback widget&quot;)
+@Pending
+public void thenErrorNotificationIsShownForFeedbackWidget() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

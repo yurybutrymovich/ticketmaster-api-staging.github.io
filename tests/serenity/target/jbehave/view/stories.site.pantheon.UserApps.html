@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>stories.site.pantheon.UserApps</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/pantheon/UserApps.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> manage my Apps</div>
+<div class="element asA"><span class="keyword asA">As a</span> user of Ticket Master Developer portal</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> perform CRUD operations with my apps</div>
+</div>
+<div class="lifecycle"><h2>Lifecycle:</h2><div class="before"><h3>Before:</h3><div class="step">Given open Home page</div>
+<div class="step">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step">And navigate to Pantheon User Account page from LogIn page</div>
+</div></div><div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/1554/apps/add) Verification for general page's elements</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">When navigate to Pantheon Add New App page from User Account page</div>
+<div class="step successful">Then check general page elements for Pantheon Add New App page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (Pantheon|Add new App) Add new App negative [2.1.15 Add New App - The required field is empty]</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given navigate to Pantheon Add New App page from User Account page</div>
+<div class="step">When enter to the field &lt;appFormField&gt; value &lt;appName&gt;</div>
+<div class="step">When save changes on Edit App Page</div>
+<div class="step">Then the message &lt;message&gt; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>appFormField</th><th>appName</th><th>message</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Application name</td><td>mamaxF-Appd2</td><td>Callback URL is required for Oauth Product</td></tr>
+<tr>
+<td>Redirect URI</td><td>https://ticketmaster.com</td><td>Application name field is required.</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {appFormField=Application name, appName=mamaxF-Appd2, message=Callback URL is required for Oauth Product}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given navigate to Pantheon Add New App page from User Account page</div>
+<div class="step successful">When enter to the field <span class="step parameter">Application name</span> value <span class="step parameter">mamaxF-Appd2</span></div>
+<div class="step successful">When save changes on Edit App Page</div>
+<div class="step successful">Then the message <span class="step parameter">Callback URL is required for Oauth Product</span> is displayed</div>
+
+<h3 class="example">Example: {appFormField=Redirect URI, appName=https://ticketmaster.com, message=Application name field is required.}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given navigate to Pantheon Add New App page from User Account page</div>
+<div class="step successful">When enter to the field <span class="step parameter">Redirect URI</span> value <span class="step parameter">https://ticketmaster.com</span></div>
+<div class="step successful">When save changes on Edit App Page</div>
+<div class="step successful">Then the message <span class="step parameter">Application name field is required.</span> is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (Pantheon|Add new App) [2.1.5 Add new App with values positive]</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given navigate to Pantheon Add New App page from User Account page</div>
+<div class="step successful">When enter to the field <span class="step parameter">Application name</span> value <span class="step parameter">uniqueApp</span></div>
+<div class="step successful">When enter to the field <span class="step parameter">Redirect URI</span> value <span class="step parameter">https://oauth.ticketmaster.com</span></div>
+<div class="step successful">And save changes on Edit App Page</div>
+<div class="step successful">Then the message <span class="step parameter">App Created!</span> is displayed</div>
+<div class="step successful">Then open my Apps page</div>
+<div class="step successful">And the App is appeared in the list of apps</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (Pantheon|Edit App) Edit app with empty required fields negative</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open my Apps page</div>
+<div class="step">And open Edit App Page for the first application</div>
+<div class="step">When clear field &lt;appFormField&gt; on Edit App Page</div>
+<div class="step">And save changes on Edit App Page</div>
+<div class="step">Then the message &lt;formError&gt; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>appFormField</th><th>formError</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Application name</td><td>Application name field is required.</td></tr>
+<tr>
+<td>Redirect URI</td><td>Callback URL is required for Oauth Product</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {appFormField=Application name, formError=Application name field is required.}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given open my Apps page</div>
+<div class="step successful">And open Edit App Page for the first application</div>
+<div class="step successful">When clear field <span class="step parameter">Application name</span> on Edit App Page</div>
+<div class="step successful">And save changes on Edit App Page</div>
+<div class="step successful">Then the message <span class="step parameter">Application name field is required.</span> is displayed</div>
+
+<h3 class="example">Example: {appFormField=Redirect URI, formError=Callback URL is required for Oauth Product}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given open my Apps page</div>
+<div class="step successful">And open Edit App Page for the first application</div>
+<div class="step successful">When clear field <span class="step parameter">Redirect URI</span> on Edit App Page</div>
+<div class="step successful">And save changes on Edit App Page</div>
+<div class="step successful">Then the message <span class="step parameter">Callback URL is required for Oauth Product</span> is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (Pantheon|Edit App) Edit app positive [2.1.8 Edit application]</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open my Apps page</div>
+<div class="step">And open Edit App Page for the first application</div>
+<div class="step">When clear field &lt;appFormField&gt; on Edit App Page</div>
+<div class="step">And enter to the field &lt;appFormField&gt; value &lt;appValue&gt;</div>
+<div class="step">And save changes on Edit App Page</div>
+<div class="step">And the message App Updated! is displayed</div>
+<div class="step">And open my Apps page</div>
+<div class="step">And open Details tab on the application</div>
+<div class="step">Then &lt;detailName&gt; have been applied on Edit App Page with value &lt;appValue&gt;</div>
+<table>
+<thead>
+<tr>
+<th>appFormField</th><th>appValue</th><th>detailName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Application name</td><td>mamax-Appdf</td><td>Application Name</td></tr>
+<tr>
+<td>Redirect URI</td><td>https://oauth.ticketmaster.com</td><td>Callback URL</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {appFormField=Application name, appValue=mamax-Appdf, detailName=Application Name}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given open my Apps page</div>
+<div class="step successful">And open Edit App Page for the first application</div>
+<div class="step successful">When clear field <span class="step parameter">Application name</span> on Edit App Page</div>
+<div class="step successful">And enter to the field <span class="step parameter">Application name</span> value <span class="step parameter">mamax-Appdf</span></div>
+<div class="step successful">And save changes on Edit App Page</div>
+<div class="step successful">And the message <span class="step parameter">App Updated!</span> is displayed</div>
+<div class="step successful">And open my Apps page</div>
+<div class="step successful">And open Details tab on the application</div>
+<div class="step failed">Then <span class="step parameter">Application Name</span> have been applied on Edit App Page with value <span class="step parameter">mamax-Appdf</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;</span></div>
+
+<h3 class="example">Example: {appFormField=Redirect URI, appValue=https://oauth.ticketmaster.com, detailName=Callback URL}</h3>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given open my Apps page</div>
+<div class="step successful">And open Edit App Page for the first application</div>
+<div class="step successful">When clear field <span class="step parameter">Redirect URI</span> on Edit App Page</div>
+<div class="step successful">And enter to the field <span class="step parameter">Redirect URI</span> value <span class="step parameter">https://oauth.ticketmaster.com</span></div>
+<div class="step successful">And save changes on Edit App Page</div>
+<div class="step successful">And the message <span class="step parameter">App Updated!</span> is displayed</div>
+<div class="step successful">And open my Apps page</div>
+<div class="step successful">And open Details tab on the application</div>
+<div class="step successful">Then <span class="step parameter">Callback URL</span> have been applied on Edit App Page with value <span class="step parameter">https://oauth.ticketmaster.com</span></div>
+</div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.pantheon.UserAppsSteps.checkIfChangesAreApplied(UserAppsSteps.java:51)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.CGLIB$checkIfChangesAreApplied$8(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50$$FastClassByCGLIB$$12002a3a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.checkIfChangesAreApplied(&lt;generated&gt;)
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.changesHaveApplied(UserAppsDefinition.java:63)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (Pantheon|Delete App) Delete App positive [2.1.9 Delete application]</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">And navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">And navigate to Pantheon User Account page from LogIn page</div>
+<div class="step successful">Given open my Apps page</div>
+<div class="step successful">When delete first App</div>
+<div class="step successful">Then the message <span class="step parameter">App Deleted!</span> is displayed</div>
+<div class="step failed">And the predefined app is removed from the list of apps <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at bla.tm.steps.pantheon.UserAppsSteps.checkIsAppNotExists(UserAppsSteps.java:76)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.CGLIB$checkIsAppNotExists$12(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50$$FastClassByCGLIB$$12002a3a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.pantheon.UserAppsSteps$$EnhancerByCGLIB$$50ba2e50.checkIsAppNotExists(&lt;generated&gt;)
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.appIsRemovedFromTheListOfApps(UserAppsDefinition.java:84)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

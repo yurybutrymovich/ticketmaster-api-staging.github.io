@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="User apps" skipped="0" tests="9" time="170.18" timestamp="2017-03-76 08:48:59"><testcase name="(developer-acct.ticketmaster.com/user/1554/apps/add) Verification for general page's elements"/><testcase name="(Pantheon|Add new App) Add new App negative [2.1.15 Add New App - The required field is empty]"/><testcase name="(Pantheon|Add new App) [2.1.5 Add new App with values positive]"/><testcase name="(Pantheon|Edit App) Edit app with empty required fields negative"/><testcase name="(Pantheon|Edit App) Edit app positive [2.1.8 Edit application]"><failure message="expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;" type="org.junit.ComparisonFailure">expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;</failure><system-err>expected:&lt;[kggqhdie]&gt; but was:&lt;[mamax-Appdf]&gt;
+bla.tm.steps.pantheon.UserAppsSteps.checkIfChangesAreApplied(UserAppsSteps.java:51)
+bla.tm.definitions.site.pantheon.UserAppsDefinition.changesHaveApplied(UserAppsDefinition.java:63)
+</system-err></testcase><testcase name="(Pantheon|Delete App) Delete App positive [2.1.9 Delete application]"><failure type="java.lang.AssertionError"/><system-err>null
+bla.tm.steps.pantheon.UserAppsSteps.checkIsAppNotExists(UserAppsSteps.java:76)
+bla.tm.definitions.site.pantheon.UserAppsDefinition.appIsRemovedFromTheListOfApps(UserAppsDefinition.java:84)
+</system-err></testcase></testsuite>

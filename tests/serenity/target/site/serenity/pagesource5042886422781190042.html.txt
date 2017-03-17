@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta content="IE=11" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <title>
+            Countdown widget – The Ticketmaster Developer Portal</title>
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="http://localhost:4000/products-and-docs/widgets/countdown/" rel="canonical" />
+    <!-- <link rel="alternate" type="application/rss+xml" title="The Ticketmaster Developer Portal" href="http://localhost:4000/feed.xml"> -->
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//s3.amazonaws.com/ki.js/62776/euc.js"></script><script src="/scripts/vendors/jquery-1.11.3.min.js"></script>
+    <script src="/scripts/components/header.js"></script>
+		<script src="https://www.universe.com/embed.js" type="text/javascript"></script>
+		<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Countdown widget - The Ticketmaster Developer Portal</title>
+<meta content="Countdown widget" property="og:title" />
+<link href="http://localhost:4000/products-and-docs/widgets/countdown/" rel="canonical" />
+<meta content="http://localhost:4000/products-and-docs/widgets/countdown/" property="og:url" />
+<meta content="The Ticketmaster Developer Portal" property="og:site_name" />
+<meta content="http://localhost:4000/assets/img/branding-guide/blue-logo@3x.png" property="og:image" />
+<meta content="http://localhost:4000/assets/img/branding-guide/blue-logo@3x.png" name="twitter:image" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Countdown widget",
+"image": "http://localhost:4000/assets/img/branding-guide/blue-logo@3x.png",
+"url": "http://localhost:4000/products-and-docs/widgets/countdown/"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<meta content="http://localhost:4000/assets/img/branding-guide/blue-logo@3x.png" property="og:image" />
+		<meta content="image/png" property="og:image:type" />
+		<meta content="792" property="og:image:width" />
+		<meta content="792" property="og:image:height" />
+<script src="//ticketmasterapi.disqus.com/embed.js" data-timestamp="1489741499394"></script><script src="https://www.universe.com/embed.js" type="text/javascript" charset="UTF-8" id="id_universe_widget"></script><script src="https://ticketmaster-api-staging.github.io/scripts/vendors/tm.js" type="text/javascript" charset="UTF-8" id="id_tm_widget"></script><style type="text/css" id="widget-theme-simple_countdown">/* FONTS */
+/* TODO: update after release to  https://developer.ticketmaster.com/*/
+@font-face {
+    font-family: "TMSans-Regular";
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Regular.eot");
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Regular.eot?") format("embedded-opentype"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Regular.woff") format("woff"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+@font-face {
+    font-family: "TMSans-Light";
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Light.eot");
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Light.eot?") format("embedded-opentype"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Light.woff") format("woff"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+@font-face {
+    font-family: "TMSans-Italic";
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Italic.eot");
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Italic.eot?") format("embedded-opentype"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Italic.woff") format("woff"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+@font-face {
+    font-family: "TMSans-Bold";
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Bold.eot");
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Bold.eot?") format("embedded-opentype"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Bold.woff") format("woff"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/tmSans/tmSans_Web/TMSans-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+
+@font-face {
+    font-family: "InterstateWGL-Black";
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/Interstate/Interstate%20Web%20Fonts/Interstate-WGL-Black/b2b70f79-f67e-4018-8328-fc80a7c3b0c2-2.eot");
+    src: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/Interstate/Interstate%20Web%20Fonts/Interstate-WGL-Black/b2b70f79-f67e-4018-8328-fc80a7c3b0c2-2.eot?") format("embedded-opentype"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/Interstate/Interstate%20Web%20Fonts/Interstate-WGL-Black/b2b70f79-f67e-4018-8328-fc80a7c3b0c2-3.woff") format("woff"), url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/fonts/Interstate/Interstate%20Web%20Fonts/Interstate-WGL-Black/b2b70f79-f67e-4018-8328-fc80a7c3b0c2-1.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+
+/* Common styles for all themes  */
+div[w-theme="simple_countdown"]{
+    position: relative;
+    height: 200px;
+    width: 150px;
+    overflow: hidden;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-family: 'TMSans-Regular', Arial, serif;
+}
+
+div[w-theme="simple_countdown"] a,
+div[w-theme="simple_countdown"] a:hover,
+div[w-theme="simple_countdown"] a:focus,
+div[w-theme="simple_countdown"] a:active{
+    text-decoration: none;
+}
+
+div[w-theme="simple_countdown"] .event-pretended-link {
+    cursor: pointer;
+    -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+div[w-theme="simple_countdown"] .event-pretended-link:hover {
+    opacity: 0.7;
+}
+
+/*
+* event-message
+*/
+
+div[w-theme="simple_countdown"] .event-message {
+    position: absolute;
+    padding: 16px 46px 16px 52px;
+    left: 10px;
+    right: 10px;
+    top: -50%;
+    border-radius: 4px;
+    font-family: "TMSans-Bold", Arial, serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+    opacity: 0;
+    z-index: 10;
+    /* TODO: update after release to  https://developer.ticketmaster.com/*/
+    background: #7356a5 url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/message_logo.svg") no-repeat 16px 50%;
+    -webkit-transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    -moz-transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+div[w-theme="simple_countdown"] .event-message__content {}
+
+div[w-theme="simple_countdown"] .event-message-visible {
+    top: 10px;
+    opacity: 1;
+}
+div[w-theme="simple_countdown"] .event-message-visible.event-message-started {
+    top: 48px;
+    margin: 0 14px;
+    padding: 20px 46px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    background: rgba(115, 86, 165, 0.9) none;
+    border-radius: 4px;
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .event-message-visible.event-message-started {
+    top: 14px;
+    font-size: 16px;
+    padding: 10px;
+}
+/*show cactus*/
+div[w-theme="simple_countdown"] .event-message-visible.cactus {
+	top: 30%;
+	/*margin: 0 14px;*/
+	padding: 20px;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	background: none;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .event-message-visible.cactus {
+	top: 0;
+}
+
+div[w-theme="simple_countdown"] .event-message-visible.cactus:before {
+	content:"";
+	height: 165px;
+	display: block;
+	margin-top: -100px;
+	/* TODO: update after release to  https://developer.ticketmaster.com/*/
+	background: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/ticket-box-img-small-white.svg") no-repeat center;
+}
+
+div[w-theme="simple_countdown"] .event-message-visible.cactus .event-message__content {
+	width: 160px;
+	text-transform: uppercase;
+	opacity: .7;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* event-message END*/
+
+
+/*hide close button*/
+div[w-theme="simple_countdown"] .event-message-visible.event-message-started .event-message__btn{
+    display: none;
+}
+
+div[w-theme="simple_countdown"] .event-message__btn {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    /* TODO: update after release to  https://developer.ticketmaster.com/*/
+    background: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/ic-close-small-white.svg") no-repeat 50% 50%;
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-message-visible.event-message-started {
+    width: 45%;
+    top: 36px;
+    left: initial;
+}
+/*
+* event-message END
+*/
+
+div[w-theme="simple_countdown"] .events-root-container{
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #b7c9d3;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+div[w-theme="simple_countdown"] ul{
+    margin: 0;
+    padding: 0;
+    -webkit-transition: margin 0.5s ease-in-out;
+    -moz-transition: margin 0.5s ease-in-out;
+    transition: margin 0.5s ease-in-out;
+}
+
+/*  question  */
+div[w-theme="simple_countdown"] .event-question {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+		cursor: pointer;
+}
+
+div[w-theme="simple_countdown"] .event-question:before,
+div[w-theme="simple_countdown"] .event-question:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: no-repeat center;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+div[w-theme="simple_countdown"] .event-question:before {
+    opacity: 0;
+    /* TODO: add https://developer.ticketmaster.com/*/
+    background-image: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/question-ic-blue.svg");
+}
+
+div[w-theme="simple_countdown"] .event-question:after {
+    opacity: 0.7;
+    /* TODO: add https://developer.ticketmaster.com/*/
+    background-image: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/question-ic-white.svg");
+}
+
+div[w-theme="simple_countdown"] .event-question:hover:before {
+    opacity: 1;
+}
+
+div[w-theme="simple_countdown"] .event-question:hover:after {
+    opacity: 0;
+}
+
+div[w-theme="simple_countdown"] .bg-cover {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+
+/* Theme special styles */
+div[w-theme="simple_countdown"] .event-wrapper {
+    display: block;
+    position: relative;
+    height: 200px;
+    width:150px;
+    float: left;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+div[w-theme="simple_countdown"] .event-content-wraper,
+div[w-theme="simple_countdown"] .event-wrapper:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+div[w-theme="simple_countdown"] .event-wrapper:before {
+    content: '';
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 30%, rgba(0,0,0,0.9) 100%), -moz-linear-gradient(top, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 15%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%), -webkit-linear-gradient(top, rgba(0,0,0,0.12) 0%,rgba(0,0,0,0) 15%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.9) 100%), linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 15%);
+}
+
+div[w-theme="simple_countdown"] .event-content-wraper {
+    width: 100%;
+    padding: 277px 24px 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+div[w-theme="simple_countdown"] .event-name{
+    display: block;
+    display: -webkit-box;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "TMSans-Bold", Arial, serif;
+    margin-bottom: 20px;
+    line-height: 31px;
+    max-height: 62px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+div[w-theme="simple_countdown"] .event-date-wraper{
+    display: block;
+    font-family: "TMSans-Bold", Arial, serif;
+    margin-bottom: 11px;
+}
+
+div[w-theme="simple_countdown"] .address-wrapper{
+    display: block;
+    /*display: -webkit-box;*/
+    height: 30px;
+    font-family: "TMSans-Light", Arial, serif;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+div[w-theme="simple_countdown"] .event-address{
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div[w-theme="simple_countdown"] .event-address:after{
+    content: ',\00a0';
+    display: inline-block;
+}
+
+div[w-theme="simple_countdown"] .address-wrapper .event-address:last-child:after{
+    display: none;
+}
+
+div[w-theme="simple_countdown"] .category-wrapper{
+    display: block;
+    font-family: "TMSans-Bold", Arial, serif;
+}
+
+div[w-theme="simple_countdown"] .address-wrapper,
+div[w-theme="simple_countdown"] .category-wrapper{
+    opacity: 0.7;
+}
+
+div[w-theme="simple_countdown"] .event-category:before{
+    content: ', ';
+}
+
+div[w-theme="simple_countdown"] .event-category:first-child:before{
+    content: '';
+}
+
+div[w-theme="simple_countdown"] .legal-notice {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 11px;
+    font-size: 11px;
+    line-height: 16px;
+    color: #ffffff;
+    opacity: 0.7;
+    width: 60px;
+}
+
+div[w-theme="simple_countdown"] .legal-notice:hover,
+div[w-theme="simple_countdown"] .legal-notice:focus,
+div[w-theme="simple_countdown"] .legal-notice:active{
+    color: #019cde;
+}
+
+div[w-theme="simple_countdown"] .event-logo-box {
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+div[w-theme="simple_countdown"] .event-logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    width: 164px;
+    height: 15px;
+    font-size: 11px;
+    color: #768692;
+}
+
+div[w-theme="simple_countdown"] .event-logo.right-logo {
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 45%;
+}
+div[w-theme="simple_countdown"] .event-logo.centered-logo {
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+
+div[w-theme="simple_countdown"] .event-logo:after{
+    content: '';
+    position: absolute;
+    left: 62px;
+    right: 0;
+    top: -1px;
+    bottom: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    /* TODO: add https://developer.ticketmaster.com/*/
+    background: url("https://ticketmaster-api-staging.github.io/assets/widgets/1.0.0/img/tm-gray-logo.svg") no-repeat;
+    background-size: 100px;
+}
+
+/* BUY NOW */
+div[w-theme="simple_countdown"] .event-buy-btn {
+    position: absolute;
+    left: 24px;
+    bottom: 42px;
+    width: 74px;
+    height: 24px;
+    padding-top: 5px;
+    border-radius: 4px;
+    background-color: #009cde;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "TMSans-Bold", Arial, serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+div[w-theme="simple_countdown"] .event-buy-btn:hover {
+    background-color: #2A7CC7;
+}
+
+div[w-theme="simple_countdown"] .event-buy-btn[href=''],
+div[w-theme="simple_countdown"] .event-buy-btn[href='']:hover {
+    /*background-color: #ccc;*/
+    cursor: default;
+    /*opacity: 0.5;*/
+    opacity: 0;
+}
+
+/*time counter*/
+
+div[w-theme="simple_countdown"] .events-count-down {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 48px;
+    width: 100%;
+    padding: 0 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+div[w-theme="simple_countdown"] .events-count-down:before {
+    content: 'time left';
+    text-transform: uppercase;
+    background-color: rgba(65, 65, 65, 0.5);
+    font-family: "TMSans-Bold", Arial, serif;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+    margin-bottom: 3px;
+}
+div[w-theme="simple_countdown"] .events-count-down.hide-countDownBox {
+    display: none;
+}
+div[w-theme="simple_countdown"] .events-count-down .events-count-down__month,
+div[w-theme="simple_countdown"] .events-count-down .events-count-down__day,
+div[w-theme="simple_countdown"] .events-count-down .events-count-down__hour,
+div[w-theme="simple_countdown"] .events-count-down .events-count-down__minute,
+div[w-theme="simple_countdown"] .events-count-down .events-count-down__second{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24.25%;
+    margin: 0 1% 0 0;
+    height: 58px;
+    line-height: 58px;
+    font-family: InterstateWGL-Black, Arial, serif;
+    font-size: 38px;
+    color: #414141;
+    background-color: rgba(250, 250, 250, .8);
+    display: inline-block;
+    position: relative;
+}
+
+@media (max-width: 1199px) {
+    div[w-theme="simple_countdown"] .events-count-down .events-count-down__month,
+    div[w-theme="simple_countdown"] .events-count-down .events-count-down__day,
+    div[w-theme="simple_countdown"] .events-count-down .events-count-down__hour,
+    div[w-theme="simple_countdown"] .events-count-down .events-count-down__minute,
+    div[w-theme="simple_countdown"] .events-count-down .events-count-down__second{
+        font-family: TMSans-Bold, Arial, serif;
+    }
+}
+
+div[w-theme="simple_countdown"] .events-count-down span:last-child {
+    margin-right: 0;
+}
+
+div[w-theme="simple_countdown"] .events-count-down__month:after,
+div[w-theme="simple_countdown"] .events-count-down__day:after,
+div[w-theme="simple_countdown"] .events-count-down__hour:after,
+div[w-theme="simple_countdown"] .events-count-down__minute:after,
+div[w-theme="simple_countdown"] .events-count-down__second:after {
+    content: '';
+    text-transform: uppercase;
+    background-color: rgba(65, 65, 65, 0.5);
+    font-family: "TMSans-Bold", Arial, serif;
+    display: block;
+    position: absolute;
+    height: 24px;
+    width: 100%;
+    top: 100%;
+    margin-top: 3px;
+    font-size: 10px;
+    line-height: 22px;
+    color: #fff;
+}
+div[w-theme="simple_countdown"] .events-count-down__month:after {
+    content: 'month';
+}
+div[w-theme="simple_countdown"] .events-count-down__day:after {
+    content: 'days';
+}
+div[w-theme="simple_countdown"] .events-count-down__hour:after {
+    content: 'hrs';
+}
+div[w-theme="simple_countdown"] .events-count-down__minute:after {
+    content: 'min';
+}
+div[w-theme="simple_countdown"] .events-count-down__second:after {
+    content: 'sec';
+}
+
+div[w-theme="simple_countdown"] .events-count-down.hide-month &gt; .events-count-down__month {
+    display: none;
+}
+
+div[w-theme="simple_countdown"] .events-count-down.hide-days &gt; .events-count-down__day {
+    display: none;
+}
+
+div[w-theme="simple_countdown"] .events-count-down.hide-seconds &gt; .events-count-down__second {
+    display: none;
+}
+
+div[w-theme="simple_countdown"] .events-count-down.hide-month.hide-days &gt; .events-count-down__minute {
+    margin: 0 1% 0 0;
+}
+
+div[w-theme="simple_countdown"] .events-count-down.hide-month.hide-days &gt; span {
+    width: 32.660%;
+}
+/*claer margin for last elem in counter*/
+div[w-theme="simple_countdown"] .events-count-down.hide-month &gt; .events-count-down__minute {
+    //margin-right: 0;
+}
+div[w-theme="simple_countdown"] .events-count-down.hide-seconds &gt; .events-count-down__minute {
+    margin-right: 0;
+}
+/*time counter END*/
+
+
+/*tooltip-version*/
+div[w-theme="simple_countdown"] .tooltip-version {
+	position: absolute;
+	z-index: 1070;
+	display: block;
+	font-family: "TMSans-Light", Arial, serif;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-break: auto;
+	line-height: 1.42857;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	white-space: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	font-size: 12px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner {
+	max-width: 100%;
+	padding: 3px 8px;
+	color: #fff;
+	text-align: center;
+	background-color: #768692;
+	border-radius: 4px;
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner a {
+	color: #fff;
+	font-size: 11px;
+	font-family: "TMSans-Light", Arial, serif;
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner a:hover {
+	text-decoration: underline;
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner .place{
+	font-family: "TMSans-Light", Arial, serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #fff;
+	opacity: 0.7;
+	display: block;
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner .place b {
+	font-weight: 700;
+	color: #fff;
+}
+
+div[w-theme="simple_countdown"] .tooltip-version.left {
+	margin-left: -3px;
+	padding: 0 5px;
+	right: 28px;
+	top: 6px;
+	display: none;
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .tooltip-version.left.show-tip {
+	display: none;
+}
+
+div[w-theme="simple_countdown"] .tooltip-inner::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+div[w-theme="simple_countdown"] .tooltip-version.left .tooltip-inner::before {
+	top: 30%;
+	right: 0;
+	margin-top: -5px;
+	content: "";
+	border-width: 5px 0 5px 5px;
+	border-left-color: #768692;
+}
+
+div[w-theme="simple_countdown"] .tooltip-version.left.show-tip {
+    opacity: 1;
+		filter: alpha(opacity=1);
+		display: block;
+}
+/*tooltip-version END*/
+
+
+/*  LAYOUT  */
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-content-wraper {
+    padding-top: 36px;
+    width: 55%;
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-name{
+    margin-bottom: 17px;
+    max-width: 560px;
+    font-size: 20px;
+    width: 100%;
+    /*ellipsis effect*/
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*ellipsis effect end*/
+    white-space: normal;
+    height: 80px;
+}
+div[w-theme="simple_countdown"][w-layout="horizontal"] .address-wrapper {
+    max-width: 560px;
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .address-wrapper,
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-date-wraper {
+    width: 100%;
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-wrapper:before {
+    background: -moz-linear-gradient(right, rgba(0,0,0,0) 30%, rgba(0,0,0,0.9) 100%), -moz-linear-gradient(top, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 20%);
+    background: -webkit-linear-gradient(right, rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%), -webkit-linear-gradient(top, rgba(0,0,0,0.12) 0%,rgba(0,0,0,0) 20%);
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 30%, rgba(0,0,0,0.9) 100%), linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 20%);
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-date-wraper {
+    max-width: 560px;
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .events-count-down{
+    width: 45%;
+    top: 36px;
+    right: 24px;
+    padding: 0;
+}
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-logo.right-logo {
+    /*-webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: .5s;
+    transition-timing-function: linear;*/
+    margin: auto;
+    left: calc(100% - 190px);
+}
+
+div[w-theme="simple_countdown"][w-layout="horizontal"] .event-logo.centered-logo {
+    /*-webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: .5s;
+    transition-timing-function: linear;*/
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+/*  LAYOUT  END*/
+
+div[w-theme="simple_countdown"][w-proportion="custom"][w-layout="vertical"] .event-name,
+div[w-theme="simple_countdown"][w-proportion="xxl"] .event-name {
+    max-height: 132px;
+    -webkit-line-clamp: 4;
+}
+
+/* LAYOUT 300x250 */
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down {
+    top: 14px;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down:before {
+    font-size: 10px;
+    line-height: 12px;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down .events-count-down__month,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down .events-count-down__day,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down .events-count-down__hour,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down .events-count-down__minute,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down .events-count-down__second{
+    height: 27px;
+    line-height: 27px;
+    font-size: 18px;
+    text-align: right;
+    padding: 3px;
+
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down__month:after,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down__day:after,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down__hour:after,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down__minute:after,
+div[w-theme="simple_countdown"][w-proportion="m"] .events-count-down__second:after {
+    top: 0%;
+    margin-top: -3px;
+    height: 14px;
+    text-align: left;
+    color: #414141;
+    background: none;
+    font-family: "TMSans-Regular", Arial, serif;
+    font-size: 8px;
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .event-content-wraper {
+    padding-top: 68px;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .event-logo-box {
+    bottom: 32px
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .event-name{
+    font-size: 18px;
+    font-family: "TMSans-Bold", Arial, serif;
+    margin-bottom: 10px;
+    line-height: 24px;
+    height: 50px;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .event-date {
+    color: rgba(255,255,255,.7);
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .event-question {
+    display: none;
+}
+div[w-theme="simple_countdown"][w-proportion="m"] .event-buy-btn {
+    bottom: 38px;
+}
+
+div[w-theme="simple_countdown"][w-proportion="m"] .event-logo.right-logo {
+    left: 40%;
+}
+/*  LAYOUT 300x250 END*/
+
+/* LAYOUT fullwidth */
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-wrapper:before {
+	content: '';
+	background: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 20%);
+	background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 20%);
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 20%);
+}
+
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-content-wraper {
+	padding: 0 24px 72px;
+	top: 50%;
+	width: 55%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "TMSans-Bold", Arial, serif;
+}
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .events-count-down {
+	width: 45%;
+	right: 24px;
+	padding: 0;
+}
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-name {
+	margin-bottom: 24px;
+	font-size: 54px;
+	width: 100%;
+	white-space: normal;
+	max-height: 116px;
+	height: 116px;
+	line-height: 64px;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-date-wraper{
+	display: block;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .address-wrapper {
+	font-size: 24px;
+	width: 100%;
+	display: block;
+	display: -webkit-box;
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	opacity: 1;
+	/*font-family: "TMSans-Bold", Arial, serif;*/
+}
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-address {
+	color: #fff;
+}
+
+div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-date {
+	color: rgba(255, 255, 255, .7);
+
+}
+
+@media (min-width: 1199px) {
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"]{
+		max-height: 700px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-content-wraper {}
+}
+@media (min-width: 767px )and (max-width: 1199px) {
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] {
+		max-height: 530px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-content-wraper {
+		top: 35%;
+		max-height: 285px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-name {
+		font-size: 34px;
+		max-height: 76px;
+		height: 76px;
+		line-height: 42px;
+		margin-bottom: 14px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-date-wraper {
+		font-size: 16px;
+		max-height: 56px;
+		height: 56px;
+		line-height: 28px;
+		margin-bottom: 14px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .address-wrapper {
+		font-size: 16px;
+		line-height: 22px;
+		max-height: 44px;
+		height: 44px;
+	}
+}
+
+@media (max-width: 767px) {
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] {
+		max-height: 500px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-content-wraper {
+		top: 35%;
+		width: 100%;
+		max-height: 255px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .events-count-down {
+		width: 100%;
+		right: 0;
+		padding: 0 24px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-name {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 14px;
+		max-height: 56px;
+		height: 56px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .event-date-wraper {
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: 14px;
+		max-height: 16px;
+		height: 16px;
+	}
+	div[w-theme="simple_countdown"][w-proportion="fullwidth"] .address-wrapper {
+		font-size: 12px;
+		line-height: 16px;
+		max-height: 32px;
+		height: 32px;
+	}
+}
+/*  LAYOUT fullwidth END*/
+
+div[w-theme="simple_countdown"][w-proportion="xxl"] .event-logo.right-logo {
+    left: 38%;
+}
+</style><style type="text/css" id="ki-gxe-g58"></style><style type="text/css" id="ki-gxe-g6e"></style><script src="https://a.disquscdn.com/next/embed/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script><script src="https://www.universe.com/embed2.js" type="text/javascript" charset="UTF-8"></script><link href="https://embed.universe.com/assets/unii-styles-2.15.0-261-g3727355.css" type="text/css" rel="stylesheet" /></head>
+
+    <body class="js menu-bg">
+        <!-- Qualaroo for ticketmaster.com -->
+        <!-- Paste this code right after the <body> tag on every page of your site. -->
+        <script type="text/javascript">
+          var _kiq = _kiq || [];
+          (function(){
+            setTimeout(function(){
+            var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+            s.async = true; s.src = '//s3.amazonaws.com/ki.js/62776/euc.js'; f.parentNode.insertBefore(s, f);
+            }, 1);
+          })();
+        </script>
+        
+
+        <script type="text/javascript">document.body.className = document.body.className.replace('no-js','js');</script>
+
+<input type="checkbox" id="cb" style="display: none" />
+<label for="cb" class="modal-info-label icon-right">
+    <img src="/assets/controls/ic-close-small-grey.svg" />
+</label>
+<div class="modal-info fixed"><span></span>
+    Please enable JS in your browser for better work of developer.ticketmaster.com
+</div>
+<div class="top-bar bg-header header-curtain menu-bg">
+<div class="body-wrapper">
+    <div class="row">
+        <div class="col-xs-7 col-lg-2 gray">
+            <a href="/" id="header-logo">
+            
+            <img src="/assets/img/header/tm-developer-logo.svg" alt="Ticketmaster logo" />
+            
+            </a>
+        </div>
+        <nav class="col-xs-12 col-lg-8" id="menu">
+            <!-- links put into single line intentionally to avoid browser rendered spaces -->
+            <a href="/products-and-docs/" data-expands-to="one" class="one nav-item expandable">Products &amp; Docs <span class="header-chevron pull-right"></span></a><a href="/partners/" data-expands-to="two" class="gray expandable">Partners<span class="header-chevron pull-right"></span></a><a href="/support/" data-expands-to="three" class="gray expandable">Support<span class="header-chevron pull-right"></span></a><a href="/blogs/" data-expands-to="four" class="gray">Blogs</a><a href="/events/" data-expands-to="five" class="gray expandable">Events<span class="header-chevron pull-right"></span></a><a href="http://code.ticketmaster.com/" data-expands-to="six" class="gray">Open Source</a>
+        </nav>
+        <div class="col-xs-5 col-lg-2 gray">
+            <a class="white" id="menu-btn"></a>
+            <div class="search-container">
+                <div class="white" id="search">
+                    <div class="search-button"></div>
+                    <form autocomplete="off" id="cse-search-box" action="/search/">
+                        <div>
+                            <input type="hidden" value="000111791941460729347:zmu0d7yvkfq" name="cx" />
+                            <input type="hidden" value="UTF-8" name="ie" />
+                            <input type="text" placeholder="Search for ..." size="14" name="q" class="q" style="background: url(&quot;https://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" />
+                            <input type="submit" value="" name="sa" class="sa" />
+                        </div>
+                    <input type="hidden" name="siteurl" value="127.0.0.1:4000/products-and-docs/widgets/countdown/" /><input type="hidden" name="ref" /><input type="hidden" name="ss" /></form>
+                    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+                    <script src="//www.google.com.ua/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
+                    <!--<span tabindex="-1" id="search-alert" style="display: none;">Whoa! Search isn't quite ready yet! We're still working on it.</span>-->
+                </div>
+                <a href="https://developer-acct.ticketmaster.com/user/login" class="apigee-login  white">Login</a>
+            </div>
+        </div>
+        <div id="rainbow">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
+            <span class="five"></span>
+            <span class="six"></span>
+        </div>
+    </div>
+</div>
+</div>
+<div style="position:fixed" tabindex="-1" class="row" id="expand-menu">
+    <div class="row-container">
+        <div style="display: none;" class="expand-section" id="expand-one">
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/apis/getting-started/">
+                    <h4>APIs</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/apis/getting-started/">Getting started</a>
+                    </li>
+                    <!--<li>
+                        <a href="/products-and-docs/apis/interactive-console/">Interactive Docs</a>
+                    </li>-->
+                    <li>
+                        <a href="/api-explorer/">API Explorer</a>
+                    </li>
+									  <li>
+                        <a href="/api-explorer/v2/">API Explorer v2</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/changelog/">Changelog</a>
+                    </li>
+
+                    <li>
+                        <h4>OPEN APIs</h4>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/discovery-api/v2/" class="star">Discovery API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/commerce/" class="star">Commerce API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/publish/">Publish API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/oauth/"> OAuth API</a>
+                    </li>
+
+                    <li>
+                        <h4>PARTNER APIs</h4>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/partner/">Partner API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/top-picks/">Top Picks API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/inventory-status/">Inventory Status API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/deals-api/">Deals API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/international-discovery/">International Discovery API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/season-ticketing/">Season Ticketing API</a>
+                    </li>
+                    <li>
+                         <a href="/products-and-docs/apis/presence/">Presence API</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/sdks/">
+                    <h4>SDKs</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-java">Java-SDK</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-javascript">JavaScript-SDK</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-scala">Scala-SDK</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/sdks/#account-manager">Account Manager</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/widgets/">
+                    <h4>WIDGETS</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/widgets/checkout/">Ticketmaster Universal Checkout</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/event-discovery/">Event Discovery Widget</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/countdown/">Countdown Widget</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/calendar/">Calendar Widget</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/wordpress/">WordPress Widget</a>
+                    </li>
+                    <li>
+                        <a href="https://www.universe.com/directpayments">Direct Payments</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -50px;" class="col-xs-2 expand-column">
+                <a href="/products-and-docs/tutorials/">
+                    <h4>TUTORIALS</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/tutorials/events-search/">Events Search</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/tutorials/widgets/">Widgets</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/tutorials/sample-apps/">Sample Apps</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-two">
+            <div style="margin-right: 20px;" class="col-xs-2 expand-column">
+                <a href="/partners/distribution-partners/">
+                    <h4>Distribution Partners</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">Affiliate Sign In</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/partners/certified-partners/">
+                    <h4>Certified Partners</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/partners/certified-partners/nexus/">Join the Nexus program</a>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="col-xs-1 expand-column" style="margin-right: 20px;">
+                <a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">
+                    <h4>Affiliates</h4>
+                </a>
+            </div>-->
+            <div style="margin-right: -120px;" class="col-xs-3 expand-column">
+                <a href="/partners/startups-and-developers/">
+                    <h4>Startups &amp; Developers</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/partners/startups-and-developers/#web">Web</a>
+                    </li>
+                    <li>
+                        <a href="/partners/startups-and-developers/#heatmap">Heatmap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="display: none;" class="expand-section" id="expand-three">
+            <div style="margin-right: 30px;" class="col-xs-1 expand-column">
+                <a href="/support/faq/">
+                    <h4>FAQ</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/faq/#general-a">General</a>
+                    </li>
+                    <li>
+                        <a href="/support/faq/#account-a">Data</a>
+                    </li>
+                    <li>
+                        <a href="/support/faq/#affiliates-a">Affiliates</a>
+                    </li>
+                    
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+            
+            <div style="margin-right: 20px;" class="col-xs-2 expand-column">
+                <a href="/support/terms-of-use/">
+                    <h4>General Terms of Use</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/terms-of-use/#license">Licensed Uses and Restrictions</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#ownership">Ownership and Relationship of Parties</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#support">Support</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#warranty">Warranty Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#release">Release and Waiver</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#indemnity">Hold Harmless and Indemnity</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#terms">General Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -40px;" class="col-xs-3 expand-column">
+                <a href="/support/terms-of-use/partner/">
+                    <h4>Partner API Terms of Use</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#licensed-uses-and-restrictions">Licensed Uses and Restrictions</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#ownership-and-relationship-of-parties">Ownership and Relationship of Parties</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#support">Support</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#warranty-disclaimer">Warranty Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#release-and-waiver">Release and Waiver</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#hold-harmless-and-indemnity">Hold Harmless and Indemnity</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#general-terms">General Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -25px;" class="col-xs-2 expand-column">
+                <a href="/support/branding-guide/">
+                    <h4>Branding Guide</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/branding-guide/#brand-logo">Logo</a>
+                    </li>
+                    <li>
+                        <a href="/support/branding-guide/#verified-tickets">Verified Tickets</a>
+                    </li>
+                    <li>
+                        <a href="/support/branding-guide/#legal-stuff">Legal Stuff</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -50px;" class="col-xs-2 expand-column">
+                <a href="/support/contact-us/">
+                    <h4>Contact Us</h4>
+                </a>
+            </div>
+
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-four">
+            <div class="col-xs-2 expand-column">
+                <a href="/blogs/">
+                    <h4>Blogs</h4>
+                </a>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-five">
+            <div class="col-xs-1 expand-column">
+                <a href="/events/">
+                    <h4>Events</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/events/#/upcoming" class="">Upcoming</a>
+                    </li>
+                    <li>
+                        <a href="/events/#/past">Past</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-six">
+            <div class="col-xs-2 expand-column">
+                <a href="http://code.ticketmaster.com/">
+                    <h4>Open Source</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul tabindex="-1" class="col-xs-12 col-sm-5 col-lg-3 closed fixed" id="menu-dropdown">
+    
+    <a class="tm-close" id="menu-btn-fixed"></a>
+    
+    <li><a href="https://developer-acct.ticketmaster.com/user/login" class="apigee-login">Login</a></li>
+    <li><a href="/products-and-docs/" class="active">Products &amp; Docs</a></li>
+    <li><a href="/partners/">Partners</a></li>
+    <li><a href="/support/">Support</a></li>
+    <li><a href="/blogs/">Blogs</a></li>
+    <li><a href="/events/">Events</a></li>
+    <li><a href="http://code.ticketmaster.com/">Open Source</a></li>
+</ul>
+
+
+
+<div class="single-column">
+
+    <div class="maincontent">
+        <div style="position: relative;" class="row">
+            <div id="aside-block" class="col-xs-12 col-sm-6 col-lg-3 has-bg is-fixed">
+                <div class="wrapper-aside-menu">
+                    <h3 id="aside-heading" class="menu-header">
+                        Products &amp; Docs
+                        <span id="side-menu-btn" class="expanded"></span>
+                    </h3>
+                    <ul id="scrollable-element" class="aside-menu">
+    <li>
+        <h4><a href="/products-and-docs/apis/getting-started/">APIs</a></h4>
+        
+    </li>
+    <li>
+        <h4><a href="/products-and-docs/sdks/">SDKs</a></h4>
+        
+    </li>
+    <li>
+        <h4><a class="active" href="/products-and-docs/widgets/">Widgets</a></h4>
+        
+            <ul class="categories menu-highlight">
+                <li><a href="/products-and-docs/widgets/checkout/">Ticketmaster Universal Checkout</a></li>
+                <li><a href="/products-and-docs/widgets/event-discovery/">Event Discovery Widget</a></li>
+                <li><a class="active" href="/products-and-docs/widgets/countdown/">Countdown Widget</a></li>
+                <li><a href="/products-and-docs/widgets/calendar/">Calendar Widget</a></li>
+                <li><a href="/products-and-docs/widgets/wordpress/">WordPress Widget</a></li>
+                <li><a href="https://www.universe.com/directpayments">Direct Payments</a></li>
+            </ul>
+        
+    </li>
+    <li>
+        <h4><a href="/products-and-docs/tutorials/">Tutorials</a></h4>
+        
+    </li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+
+        var uniqueUpcoming = [].map.call($(".tag-btn"), function(item){
+            return '&lt;li&gt;&lt;a href="#' + item.textContent + '" class="tag-menu-btn"&gt;' + item.textContent + '&lt;/a&gt;&lt;/li&gt;';
+        }).filter( function(value, index, self) {
+            return self.indexOf(value) === index;
+        }).join("");
+
+        if(uniqueUpcoming !== ""){
+            $(".categories&gt;li&gt;a.active + .sd-tags-list").append(uniqueUpcoming);
+        }
+
+        var PartnerTagClickHandler = function() {
+            var currentItem = this.textContent;
+            var isActive = $(this).hasClass('active');
+            if(isActive){
+                $(".tag-btn, .tag-menu-btn").removeClass("active");
+                $(".tutorials-article").show();
+                if(this.tagName.toUpperCase() == "BUTTON"){
+                    this.blur();
+                }
+
+            }else{
+                $(".tag-btn").add(".tag-menu-btn").removeClass("active").map(function(){
+                    if (this.textContent == currentItem) {
+                        return this;
+                    }
+                }).addClass("active");
+
+                $(".tutorials-article").show().filter(function() {
+                    return $(this).find(".tag-btn.active").size() === 0;
+                }).hide();
+            }
+
+
+        };
+
+        $(".tutorials-article").on("click", ".tag-btn", PartnerTagClickHandler);
+        $(".categories").on("click", ".tag-menu-btn", PartnerTagClickHandler);
+    });
+
+
+
+</script>
+
+                </div>
+            </div>
+
+            <div id="main-block" class="col-xs-12 col-sm-12 col-lg-9 page-column ">
+                <div style="display: block;" class="content 
+">
+                    <link href="/products-and-docs/widgets/countdown/1.0.0/theme/simple_countdown.css" rel="stylesheet" id="widget-theme-simple" />
+<link href="/products-and-docs/widgets/countdown/1.0.0/theme/fullwidth.css" rel="stylesheet" id="widget-theme-fullwidth" />
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css" rel="stylesheet" />
+
+<div class="widget-content-wrapper">
+  <div class="row row-native">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1>COUNTDOWN WIDGET</h1>
+      <p class="lead">The TM Widgets allow partners to setup particular widgets and provide enhanced discovery experience for consumers within copy/paste distance.</p>
+      <h2>Widget: Keyword search</h2>
+      <p>You can use the widget configurator below to customize the layout of the widget, and grab a small code snippet to insert into your website.</p>
+    </div>
+  </div>
+
+  <div class="row row-native">
+    <div class="col-lg-4 config-block">
+      
+<form autocomplete="off" method="post" class="main-widget-config-form common_tabs" accept-charset="UTF-8">
+
+  <!--Use for mobile devices 'Go' button-->
+  <button class="hidden" type="submit"></button>
+
+  <ul data-tabs="tabs" class="nav nav-tabs">
+    <li class="">
+      <a data-toggle="tab" href="#widget-config-setup" aria-expanded="false">Technical</a>
+    </li>
+    <li class="active">
+      <a data-toggle="tab" href="#widget-config-styling" id="js_styling_nav_tab" aria-expanded="true">Visual</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="widget-config-setup" class="tab-pane fade">
+      <div class="row row-native">
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <div class="widget_api_key">
+            <label for="w-tm-api-key">
+              API Key <span class="config_field__description">(Required)</span>
+            </label>
+            <a class="pull-right" href="https://developer-acct.ticketmaster.com/user/login">Get your own</a>
+            <div id="js_custom_select_key" class="widget_api_key__field">
+              <input type="text" value="" name="w-tm-api-key" id="w-tm-api-key" />
+							<a class="widget_api_key__question" href="/support/faq/"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <label for="w-id">
+            Event Id <span class="config_field__description">(Required)</span>
+          </label>
+          <div class="lazy-selector-wrapper"><input type="text" class="js_lazy-selector double-margin-bottom" value="vvG1VZfp5YNjko" name="w-id" id="w-id" /><a data-target="#js_ls-modal" data-toggle="modal" id="get-event-by-Id-" class="icon" data-selector="events"></a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="widget-config-styling" class="tab-pane fade active in">
+      <div class="row row-native">
+        <!--<div class="col-lg-12 col-md-12 col-sm-12 col-sm-theme">
+          <label>Themes</label>
+          <div class="tab-buttons">
+            <input checked id="w-theme-simple" type="radio" value="simple_countdown" name="w-theme">
+            <label for="w-theme-simple">Poster</label>
+            <input id="w-theme-fullwidth" type="radio" value="fullwidth" name="w-theme">
+            <label for="w-theme-fullwidth">Full-width</label>
+          </div>
+        </div>-->
+
+        <div id="js-layout-box" class="col-lg-12 col-md-12 col-sm-12 col-sm-layout">
+          <div class="row base-margin-bottom">
+            <label>Layout</label>
+            <div class="col-lg-12 js-fixed-size-buttons radio-buttons">
+              <div class="row">
+                <div class="col-lg-6 col-sm-2 col-xs-6 widget__various-width">
+                  <input type="radio" name="w-proportion" value="xxl" id="w-fixed-300x600" />
+                  <label for="w-fixed-300x600">300x600</label>
+                </div>
+                <div class="col-lg-6 col-sm-2 col-xs-6 widget__various-width">
+                  <input type="radio" name="w-proportion" value="m" id="w-fixed-300x250" />
+                  <label for="w-fixed-300x250">300x250</label>
+                </div>
+								<div class="col-lg-6 col-sm-2 col-xs-6 widget__various-width">
+									<input type="radio" name="w-proportion" value="fullwidth" id="w-layout-fullwidth" />
+									<label for="w-layout-fullwidth">Fullwidth</label>
+								</div>
+                <div class="col-lg-6 col-sm-2 col-xs-6 widget__various-width">
+                  <input type="radio" name="w-proportion" value="custom" id="w-custom" checked="checked" />
+                  <label for="w-custom">Custom</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 js-tab-buttons radio-buttons">
+              <div class="row">
+                <div class="col-lg-12 line"></div>
+                <div class="col-xs-6 widget__various-width">
+                  <input type="radio" name="w-layout" value="vertical" id="w-layout-vertical" checked="checked" />
+                  <label for="w-layout-vertical">Vertical</label>
+                </div>
+                <div class="col-xs-6 widget__various-width">
+                  <input type="radio" name="w-layout" value="horizontal" id="w-layout-horizontal" />
+                  <label for="w-layout-horizontal">Horizontal</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-native">
+        <div class="col-lg-12 js_widget_width_slider">
+          <label for="w-width">
+            Width <span class="config_field__description">(px)</span>
+          </label>
+          <div class="bootstrap_slider bootstrap_slider-horizontal">
+            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div><div class="slider-handle min-slider-handle" role="slider" aria-valuemin="350" aria-valuemax="500" style="left: 0%;" aria-valuenow="350" tabindex="0"></div><div class="slider-handle max-slider-handle hide" role="slider" aria-valuemin="350" aria-valuemax="500" style="left: 0%;" aria-valuenow="350" tabindex="0"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -25.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">350</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div></div><input type="text" data-slider-value="350" data-slider-step="1" data-slider-max="500" data-slider-min="350" name="w-width" id="w-width" style="display: none;" data-value="350" value="350" />
+          </div>
+        </div>
+        <div class="col-lg-12 js_widget_border_slider double-margin-bottom">
+          <label for="w-borderradius">
+            Corner Radius <span class="config_field__description">(px)</span>
+          </label>
+          <div class="bootstrap_slider bootstrap_slider-horizontal">
+            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 20%;"></div><div class="slider-track-high" style="right: 0px; width: 80%;"></div><div class="slider-handle min-slider-handle" role="slider" aria-valuemin="0" aria-valuemax="20" style="left: 20%;" aria-valuenow="4" tabindex="0"></div><div class="slider-handle max-slider-handle hide" role="slider" aria-valuemin="0" aria-valuemax="20" style="left: 0%;" aria-valuenow="0" tabindex="0"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 20%; margin-left: -18.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">4</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div></div><input type="text" data-slider-value="4" data-slider-step="1" data-slider-max="20" data-slider-min="0" name="w-borderradius" id="w-borderradius" style="display: none;" data-value="4" value="4" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-native visible-lg">
+      <div class="col-lg-6 col-md-3 col-sm-3">
+        <button class="js_get_widget_code btn btn-block button button-blue widget_config__btn" type="button">GET CODE</button>
+      </div>
+      <div class="col-lg-6 col-md-3 col-sm-3">
+        <button class="js_reset_widget btn btn-block button-white-gray-border widget_config__btn" type="button">RESET</button>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+
+    </div>
+
+    <div class="col-lg-8 col-lg-widget">
+      <div class="widget-container-wrapper" style="margin-top: 0px;">
+        <div class="widget-container">
+          <div w-proportion="custom" w-layout="vertical" w-borderradius="4" w-height="600" w-width="350" w-theme="simple_countdown" w-id="vvG1VZfp5YNjko" w-tmapikey="TQMbqzKDBbcCjAxC9SaKS1lg9D5Eousb" w-type="countdown" style="height: 600px; width: 350px;"><div class="events-root-container" style="height: 600px; width: 350px; border-radius: 4px; border-width: 0px;"><ul class="events-root"><li class="event-wrapper" style="height: 600px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;https://s1.ticketm.net/dam/a/af2/f8f16f4a-1d78-4fbf-8d12-01f917947af2_252691_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://concerts.livenation.com/event/0D005162F08DC191" onclick="ga('send', 'event', 'CountDownClickeventName_theme=simple_countdown_width=350_height=600_color_scheme=light', 'click', 'http://concerts.livenation.com/event/0D005162F08DC191');">ZZ Top</span><span class="event-date-wraper"><span class="event-date">Fri, Mar 17, 2017 08:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Fillmore Miami Beach at Jackie Gleason Theater</span><span class="event-address">1700 Washington Ave</span></span></div></li></ul><a class="event-buy-btn" target="_blank" href="" onclick="ga('send', 'event', 'CountdownClickBuyButton', 'click');">BUY NOW</a><div class="event-logo-box"><a class="event-logo centered-logo" target="_blank" href="https://www.ticketmaster.com/">Powered by </a></div><span class="event-question"></span><div class="tooltip-version left">
+				<div class="tooltip-inner"> 
+					<a target="_blank" href="http://developer.ticketmaster.com/support/faq/">About widget</a>
+					<div class="place">version: <b>1.0.0</b></div>
+				</div></div><div class="event-message"><div class="event-message__content"></div></div><div class="events-count-down hide-month hide-days"><span class="events-count-down__month">00</span><span class="events-count-down__day">00</span><span class="events-count-down__hour">15</span><span class="events-count-down__minute">24</span><span class="events-count-down__second">49</span></div></div><a class="legal-notice" target="_blank" href="http://developer.ticketmaster.com/support/terms-of-use/">Legal Notice</a></div>
+        </div>
+      </div>
+
+      <div class="row hidden-lg row-mobile-control">
+        <div class="row row-native">
+          <div class="col-md-3 col-sm-3">
+            <button class="js_get_widget_code btn btn-block button button-blue widget_config__btn" type="button">GET CODE</button>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <button class="js_reset_widget btn btn-block button-white-gray-border widget_config__btn" type="button">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="disqus_thread"><iframe width="100%" frameborder="0" id="dsq-app1" name="dsq-app1" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px ! important; min-width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 608px ! important;" src="https://disqus.com/embed/comments/?base=default&amp;version=60c69418f14a8b7401cd956e1062204c&amp;f=ticketmasterapi&amp;t_i=Countdown%20widget&amp;t_u=http%3A%2F%2Fdeveloper.ticketmaster.com%2Fproducts-and-docs%2Fwidgets%2Fcountdown%2F&amp;t_d=Countdown%20widget%20%E2%80%93%20The%20Ticketmaster%20Developer%20Portal&amp;t_t=Countdown%20widget%20%E2%80%93%20The%20Ticketmaster%20Developer%20Portal&amp;s_o=default" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+  // Global discus config func.
+  window.disqus_config = function () {
+		if (window.location.hostname != 'developer.ticketmaster.com') {
+		    var pageURL = window.location.href.replace(window.location.host, 'developer.ticketmaster.com');
+		    this.page.url = pageURL || "http://developer.ticketmaster.com/";
+		}
+		else this.page.url = document.URL || "http://developer.ticketmaster.com/";
+    this.page.identifier = "Countdown widget";
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//ticketmasterapi.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', + new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+
+<!-- Modal widget-->
+<div role="dialog" class="modal modal-common fade" id="js_widget_modal">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+        <div class="row">
+          <h3 class="modal-title col-lg-12">Embedded code</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>HTML</h4>
+            <div data-clipboard-target="#widget-code-tag" data-original-title="Copy to Clipboard" data-placement="top" rel="tooltip" class="copy-btn"></div>
+            <code id="widget-code-tag" data-lang="html" class="language-html widget_dialog__code"></code>
+            <h4>JavaScript</h4>
+            <div data-clipboard-target="#widget-code-script" data-placement="top" data-original-title="Copy to Clipboard" rel="tooltip" class="copy-btn"></div>
+            <code id="widget-code-script" data-lang="js" class="language-js widget_dialog__code">
+              &lt;script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/countdown/1.0.0/lib/main-widget.js"&gt;&lt;/script&gt;
+            </code>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-submit text-center" type="button" id="js_widget_modal__close">Ok</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal widget end-->
+
+
+<!-- Modal has no code-->
+<div role="dialog" class="modal modal-common modal-common-sm fade" id="js_widget_modal_no_code">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title col-lg-12 text-center">Warning</h3>
+        <p class="text-center">There are no such events</p>
+        <div class="modal-footer">
+          <button class="btn btn-submit text-center" type="button" id="js_widget_modal_no_code__close">Ok</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal has no code end-->
+
+
+	<script src="/scripts/components/api-key-service.js"></script>
+
+<script type="text/javascript">
+  // Get default widget API_KEY
+  var defaultApiKey = apiKeyService.getApiWidgetsKey();
+  // Set default widget API_KEY for config. input and widget
+  $('[w-type=countdown]').attr('w-tmapikey', defaultApiKey);
+  $('#w-tm-api-key').val(defaultApiKey);
+</script>
+
+<script src="/products-and-docs/widgets/countdown/1.0.0/lib/main-widget.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+<script src="/products-and-docs/widgets/countdown/1.0.0/lib/main-widget-config.js?v=2"></script>
+
+<!--add copy button to modal-->
+<script src="/scripts/vendors/clipboard.js"></script>
+<script src="/scripts/components/clipboard-fallback.js"></script>
+<script src="/scripts/components/clipboard-init.js"></script>
+
+
+                    
+                <div class="side-box"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="xs-center slice-top-left menu-bg" id="footer">
+
+<div class="row footer-nav">
+    <div class="row-container">
+        <div class="col-xs-12 col-sm-2">
+            <a href="/products-and-docs/"><h4 class="white">Products &amp; Docs</h4></a>
+            <ul>
+                <li><a href="/products-and-docs/apis/getting-started/">APIs</a></li>
+                <li><a href="/products-and-docs/sdks/">SDKs</a></li>
+                <li><a href="/products-and-docs/widgets/">Widgets</a></li>
+                <li><a href="/products-and-docs/tutorials/">Tutorials</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/partners/"><h4 class="white">Partners</h4></a>
+            <ul>
+                <li><a href="/partners/distribution-partners/">Distribution Partners</a></li>
+                <li><a href="/partners/certified-partners/">Certified Partners</a></li>
+                <!--<li><a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">Affiliates</a></li>-->
+                <li><a href="/partners/startups-and-developers/">Startups &amp; Developers</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/support/"><h4 class="white">Support</h4></a>
+            <ul>
+                <li><a href="/support/faq/">FAQ</a></li>
+                
+                <li><a href="/support/terms-of-use/">General Terms of Use</a></li>
+                <li><a href="/support/terms-of-use/partner/">Partner API Terms of Use</a></li>
+                <li><a href="/support/branding-guide/">Branding Guide</a></li>
+                <li><a href="/support/contact-us/">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/blogs/"><h4 class="white">Blogs</h4></a>
+            <ul>
+                <li><a href="http://tech.ticketmaster.com/">Tech Blog</a></li>
+                <li><a href="https://medium.com/ticketmaster-tech/">Medium Publication</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/events/"><h4 class="white">Events</h4></a>
+            <ul>
+                <li><a href="/events/#/upcoming/hackathon">hackathons</a></li>
+                <li><a href="/events/#/upcoming/devjam">devjam</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="http://code.ticketmaster.com/"><h4 class="white">Open Source</h4></a>
+            <ul>
+                <li><a href="http://code.ticketmaster.com/#android-projects">Android</a></li>
+                <li><a href="http://code.ticketmaster.com/#backend-projects">Backend</a></li>
+                <li><a href="http://code.ticketmaster.com/#iOS-projects">iOS</a></li>
+                <li><a href="http://code.ticketmaster.com/#web-projects">Web</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom: 10px;" class="row bottom-logo">
+    <div class="row-container">
+        <div class="col-xs-12">
+            <a href="http://www.ticketmaster.com">
+            <img src="/assets/img/footer/ticketmaster-logo-white.svg" alt="Ticketmaster logo" />
+            </a>
+            <span>© 1976–2017 Ticketmaster. All rights reserved.</span>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<script src="/scripts/vendors/user-scroll-disabler.js"></script>
+<script src="/scripts/components/pd-side-menu.js"></script>
+<script src="/scripts/components/menu-highlight.js"></script>
+
+
+
+
+
+
+
+
+        <div id="back-top" style="display: none;">
+            <a href="javascript:void(0)"><span></span></a>
+        </div>
+
+        
+        
+
+        <script src="/scripts/components/scroll-top.js"></script>
+        <script src="/scripts/vendors/bootstrap.min.js"></script>
+        
+
+<div role="dialog" tabindex="-1" id="feedback-modal" class="modal modal-common fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+        <div class="row">
+          <h3 class="modal-title col-lg-12">Leave Your Feedback</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <form method="POST" action="https://getsimpleform.com/messages/ajax?form_api_token=d9878ccc8e22c7253d057015617f82cd" accept-charset="UTF-8" id="js_feedback_form">
+          <div class="col-lg-6">
+            <label for="name">Your name</label>
+            <input type="text" autofocus="" maxlength="255" name="name" id="name" required="" />
+          </div>
+          <div class="col-lg-6">
+            <label for="email">Your email</label>
+            <input type="email" title="Use the following format '-@-.--' " pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" required="" name="email" id="email" />
+          </div>
+          <div class="col-lg-12">
+            <label for="subject">Subject</label>
+            <div class="js_custom_select custom_select">
+              <select tabindex="-1" id="subject" name="subject" class="custom_select__field" required="">
+                <option value="General feedback">General feedback</option>
+                <option value="Current workflow of the portal">Current workflow of the portal</option>
+                <option value="Technical issues">Technical issues</option>
+              </select>
+              <input type="text" readonly="readonly" value="General feedback" class="custom_select__placeholder" />
+              <ul class="custom_select__list">
+                <li data-value="General feedback" class="custom_select__item custom_select__item-active">General feedback</li>
+                <li data-value="Current workflow of the portal" class="custom_select__item">Current workflow of the portal</li>
+                <li data-value="Technical issues" class="custom_select__item">Technical issues</li>
+              </ul>
+            <div class="custom_select__arrow"></div></div>
+          </div>
+          <div class="col-lg-12">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3" required=""></textarea>
+          </div>
+          <div class="col-sm-12">
+            <p style="display:none" class="text-overflow-message text-overflow-message__red" id="feedback-message-error">The maximum length of description can be 3000 characters.</p>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-submit" type="button" id="js_feedback_btn">send</button>
+      </div>
+
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Button trigger modal -->
+<button data-target="#feedback-modal" data-toggle="modal" class="btn feedback-btn scale-on-hover" type="button" id="js_feedback_open">feedback</button>
+
+
+<!-- Modal alert-->
+<div role="dialog" class="modal modal-common modal-common-sm fade" id="feedback-alert-modal">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title col-lg-12 text-center">Thank you for contacting us!</h3>
+        <p class="text-center">We will review and respond promptly.</p>
+        <div class="modal-footer">
+          <button class="btn btn-submit text-center" type="button" id="js_feedback_btn_alert_ok">Ok</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal alert end-->
+
+<!-- Modal alert Error-->
+<div role="dialog" class="modal modal-common modal-common-sm fade" id="feedback-alert-modal-error">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title col-lg-12 text-center text-overflow-message__red">Error</h3>
+        <p class="text-center" id="text-overflow-message">The maximum length of description can be 3000 characters.</p>
+        <div class="modal-footer">
+          <button class="btn btn-submit text-center" type="button" id="js_feedback_btn_alert_ok-error">Ok</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal alert end-->
+
+        <script src="/scripts/components/custom-select.js"></script>
+        <script src="/scripts/components/numeric-input.js"></script><iframe style="display: none;"></iframe>
+        <script src="/scripts/components/feedback.js"></script>
+
+
+
+        
+            
+                <div role="dialog" tabindex="-1" id="js_ls-modal" class="modal modal-common fade">
+    <div class="modal-dialog">
+        <div></div><!--map-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+                <div class="row">
+                    <h3 class="modal-title col-lg-12">Find <span>event</span> by keyword</h3>
+                </div>
+            </div>
+            <div class="modal-body">
+
+                <form method="GET" accept-charset="UTF-8" id="js_lazy-sel_form">
+                    <div class="col-sm-9 clear-padding-right">
+                        <input type="text" autofocus="" id="keyword" placeholder="keyword" required="" />
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <button class="btn btn-transparent" type="button" id="js_ls-modal_btn">GET</button>
+                    </div>
+                </form>
+
+                <div style="display: none;" id="spinner-ls"></div>
+                <div style="display: none;" class="ms-selection">
+                    <div class="col-sm-9 col-xs-12">
+                        <ul class="ms-list">
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 text-right">
+                        <button class="btn btn-submit" type="button" id="js_ms-use-btn">Use</button>
+                    </div>
+                </div>
+                <hr style="display: none;" id="js_ls-top-hr" />
+
+                <div class="wrapper-list-group">
+                    <ul class="list-group" id="js_lazy-sel_list"></ul>
+                    <div id="load-more-box" style="display: none;" class="list-footer text-center">
+                        <button class="btn btn-submit" type="button" id="js_ls-more_btn">SHOW MORE EVENTS</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+
+        <div style="background-color: aliceblue;" class="wrapper-map">
+            <button aria-controls="m1" class="button-close-map" id="close1" style="display: none;"></button>
+            <div style="background-color: aliceblue;" class="" id="map-canvas"></div>
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+                <script src="/scripts/components/lazy-selector.js"></script>
+                <script src="/scripts/components/application-selector.js"></script>
+                
+				        
+            
+        
+
+    
+
+</body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1350" height="2258"></canvas></html>

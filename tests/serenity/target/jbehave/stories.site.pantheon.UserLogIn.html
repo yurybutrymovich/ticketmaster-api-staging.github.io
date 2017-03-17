@@ -1,0 +1,31 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/pantheon/UserLogIn.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test engineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Pantheon User LonIn Page of Ticket Master Developer's site</div>
+</div>
+<div class="lifecycle"><h2>Lifecycle:</h2><div class="before"><h3>Before:</h3><div class="step">Given open Home page</div>
+<div class="step">When navigate to Pantheon LogIn page from Home page</div>
+</div></div><div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/login) Verification for general page's elements</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">Then check general page elements for Pantheon User LogIn page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/login) [2.2.3.2 Login - Username/Email field - enter invalid username]</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">When login to Pantheon with <span class="step parameter">invaliduserName</span> and <span class="step parameter">1234567</span></div>
+<div class="step successful">Then the message <span class="step parameter">Sorry, unrecognized username or password. Have you forgotten your password?</span> is displayed</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/login) [2.2.3.8 Login - OpenID field - invalid OpenID]</h2>
+<div class="step successful">Given open Home page</div>
+<div class="step successful">When navigate to Pantheon LogIn page from Home page</div>
+<div class="step successful">When login to Pantheon using OpenID <span class="step parameter">invalidOpenID</span></div>
+<div class="step successful">Then the message <span class="step parameter">Sorry, that is not a valid OpenID. Ensure you have spelled your ID correctly.</span> is displayed</div>
+</div>
+</div>

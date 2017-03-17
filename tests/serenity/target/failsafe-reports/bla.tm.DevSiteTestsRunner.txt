@@ -1,0 +1,106 @@
+-------------------------------------------------------------------------------
+Test set: bla.tm.DevSiteTestsRunner
+-------------------------------------------------------------------------------
+Tests run: 798, Failures: 9, Errors: 7, Skipped: 32, Time elapsed: 1,623.806 sec <<< FAILURE! - in bla.tm.DevSiteTestsRunner
+Then <detailName> have been applied on Edit App Page with value <appValue>(bla.tm.definitions.site.pantheon.UserAppsDefinition)  Time elapsed: 0.656 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[kggqhdie]> but was:<[mamax-Appdf]>
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.changesHaveApplied(UserAppsDefinition.java:63)
+
+Scenario: |Pantheon|Edit App| Edit app positive [2.1.8 Edit application]  Time elapsed: 0.215 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+And the predefined app is removed from the list of apps(bla.tm.definitions.site.pantheon.UserAppsDefinition)  Time elapsed: 0.461 sec  <<< FAILURE!
+java.lang.AssertionError
+	at bla.tm.definitions.site.pantheon.UserAppsDefinition.appIsRemovedFromTheListOfApps(UserAppsDefinition.java:84)
+
+Scenario: |Pantheon|Delete App| Delete App positive [2.1.9 Delete application]  Time elapsed: 0.478 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+UserApps.story  Time elapsed: 0.556 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+
+And set theme to full-width(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 10.966 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToFullWidth(CountdownWidgetDefinition.java:55)
+
+Scenario: |/products-and-docs/widgets/countdown/| VISUAL TAB - Check Full-width mode  Time elapsed: 10.973 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+And set theme to poster(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 11.088 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+
+And set theme to poster​(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 11.381 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+
+And set theme to poster​​(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 10.936 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+
+Scenario: |/products-and-docs/widgets/countdown/| VISUAL TAB - Check Layout Resolutions  Time elapsed: 11.239 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+And set theme to poster​​​(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 10.962 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+
+And set theme to poster​​​​(bla.tm.definitions.site.widgets.CountdownWidgetDefinition)  Time elapsed: 11.017 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 5 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-967748ae-091a-4b2e-bf7f-cf8d456ac9b9', ip: '172.17.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.12-040812-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at bla.tm.definitions.site.widgets.CountdownWidgetDefinition.setThemeToPoster(CountdownWidgetDefinition.java:60)
+
+Scenario: |/products-and-docs/widgets/countdown/| VISUAL TAB - Check Layout Orientations  Time elapsed: 11.085 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+
+CountdownWidget.story  Time elapsed: 0.639 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+
+bla.tm.DevSiteTestsRunner  Time elapsed: 4.373 sec  <<< ERROR!
+java.lang.RuntimeException: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate configuration report
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate configuration report
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+Caused by: java.util.concurrent.ExecutionException: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@386ec37d
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@386ec37d
+Caused by: java.lang.NullPointerException
+

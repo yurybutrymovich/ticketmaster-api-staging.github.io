@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" dir="ltr" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible" /><script type="text/javascript" src="https://bam.nr-data.net/1/0712dc03aa?a=9191051&amp;v=1026.7a27a3e&amp;to=MlUDMRACDEdYVhYICgsfIAYWCg1aFlgHPg0EXgUJBxE%3D&amp;rst=8028&amp;ref=https://developer-acct.ticketmaster.com/user/1554/apps&amp;ap=1675&amp;be=7854&amp;fe=8011&amp;dc=7960&amp;perf=%7B%22timing%22:%7B%22of%22:1489740658607,%22n%22:0,%22u%22:7826,%22r%22:1,%22ue%22:7828,%22re%22:6113,%22f%22:6114,%22dn%22:6114,%22dne%22:6114,%22c%22:6114,%22ce%22:6114,%22rq%22:6117,%22rp%22:7824,%22rpe%22:7844,%22dl%22:7826,%22di%22:7926,%22ds%22:7959,%22de%22:7984,%22dc%22:8010,%22l%22:8010,%22le%22:8013%7D,%22navigation%22:%7B%22rc%22:2%7D%7D&amp;at=HhIAR1gYH0k%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1026.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&amp;&amp;(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&amp;&amp;(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&amp;&amp;(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&amp;&amp;e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&amp;&amp;e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c&lt;f;c++)u[c].apply(a,r);var p=s[y[t]];return p&amp;&amp;p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&amp;&amp;(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&amp;&amp;"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&amp;&amp;e.licenseKey&amp;&amp;e.applicationID&amp;&amp;n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&amp;&amp;i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&amp;&amp;performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&amp;&amp;w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&amp;&amp;g&amp;&amp;g[l]&amp;&amp;!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <!--[if IE]><![endif]-->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link type="image/vnd.microsoft.icon" href="https://developer-acct.ticketmaster.com/sites/all/themes/tm/favicon.ico" rel="shortcut icon" />
+<link href="https://developer-acct.ticketmaster.com/user/1554/apps" rel="canonical" />
+<link href="https://developer-acct.ticketmaster.com/user/1554/apps" rel="shortlink" />
+  <title>Ticketmaster Developer Center | My Apps</title>
+  <link media="all" href="https://developer-acct.ticketmaster.com/sites/default/files/advagg_css/css__9cWqptSUNYq5YedfIwh33VxtugFVWjDdEsblT8GhLKI__quUjyhSfbEukHj8a0hYvzm9VTmPALmSZvA0xfM_Oxzo__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.css" rel="stylesheet" type="text/css" />
+<link media="all" href="https://developer-acct.ticketmaster.com/sites/default/files/advagg_css/css__VrTBhj98zXy1m8ZhmTSZgeMozUOqOfcnI84rGYV36a4__VgVqRbcW45CmqitkgLjCAbNyk2lrEUEpLbmv5iRP6e0__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.css" rel="stylesheet" type="text/css" />
+<link media="all" href="https://developer-acct.ticketmaster.com/sites/default/files/advagg_css/css__WHX1xhMiZryHKPQcU13cDd8l3crZuovWtslretQ5OYo__r2jEjomN0cdtqY74bRS4kgfiRiqCS3BvIquAtMdnKGY__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.css" rel="stylesheet" type="text/css" />
+<link media="all" href="https://developer-acct.ticketmaster.com/sites/default/files/advagg_css/css__Kls2qDa2da2nQYznqd44rfB4QFYCEYjtZgMyWlouBTU__bai57ni90sRGe7ripuq41h51bonWyNc9M1-taCV-i0g__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.css" rel="stylesheet" type="text/css" />
+<link media="all" href="https://developer-acct.ticketmaster.com/sites/default/files/advagg_css/css___hVq6ywWf6FVPk7iZ2xwUb2BNcWD30U7UOKGpOOqMek__pfZRBDhcWIKs5dg76N29LQfmBhIf3rgrGUIeQzjBqBc__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.css" rel="stylesheet" type="text/css" />
+<style>
+/* &lt;![CDATA[ */
+.navbar-nav &gt; li &gt; span &gt; span.caret{border-bottom-color:#3B73AF;border-top-color:#3B73AF;color:#3B73AF;}.faq .collapsed{display:block !important;}body header.navbar{background-color:#FFFFFF;}body header.navbar{border-color:#FFFFFF;}body .navbar-inverse .navbar-toggle,body .navbar-inverse .navbar-collapse:focus,body .navbar-inverse .navbar-toggle:hover,body .navbar-inverse .navbar-toggle:focus,body .navbar-inverse .navbar-nav &gt; .open &gt; a,body .navbar-inverse .navbar-nav &gt; .open &gt; a:hover,body .navbar-inverse .navbar-nav &gt; .open &gt; a:focus,body .navbar-default .navbar-toggle:hover,body .navbar-default .navbar-toggle:active,body .navbar-default .navbar-toggle:focus,body .navbar-default .navbar-collapse,body .navbar-default .navbar-collapse:hover,body .navbar-default .navbar-collapse:focus,body .navbar-default .navbar-nav &gt; .open &gt; a,body .navbar-default .navbar-nav &gt; .open &gt; a:hover,body .navbar-default .navbar-nav &gt; .open &gt; a:focus,body header.navbar.navbar-nav &gt; .open &gt; a,body header.navbar.navbar-nav &gt; .open &gt; a:hover,body header.navbar.navbar-nav &gt; .open &gt; a:focus{border-color:#FFFFFF;background-color:#FFFFFF;}body .navbar-inverse .navbar-nav &gt; .open &gt; a:hover{color:#000000;}body header.navbar .nav &gt; li &gt; a{color:#3B73AF;}body header.navbar .nav &gt; li &gt; a:hover{background-color:#EEEEEE;}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form,.navbar-inverse .navbar-toggle,.navbar-default .navbar-collapse,.navbar-default .navbar-form,.navbar-default .navbar-toggle,header.navbar.navbar-collapse,header.navbar.navbar-form,header.navbar.navbar-toggle{border-color:#EEEEEE;}.navbar-inverse .navbar-toggle,.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-nav &gt; .open &gt; a,.navbar-inverse .navbar-nav &gt; .open &gt; a:hover,.navbar-inverse .navbar-nav &gt; .open &gt; a:focus,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:active,.navbar-default .navbar-toggle:focus,.navbar-default .navbar-nav &gt; .open &gt; a,.navbar-default .navbar-nav &gt; .open &gt; a:hover,.navbar-default .navbar-nav &gt; .open &gt; a:focus,header.navbar.navbar-nav &gt; .open &gt; a,header.navbar.navbar-nav &gt; .open &gt; a:hover,header.navbar.navbar-nav &gt; .open &gt; a:focus{background-color:#EEEEEE;}body header.navbar .nav .active &gt; a,body .navbar .nav .active &gt; a:hover,.navbar.navbar-fixed-top #main-menu li a:hover{background-color:#EEEEEE;}body header.navbar .nav &gt; li &gt; a:hover{color:#000000;}body a{color:#137AAA;}body a:hover{color:#000000;}body .footer{background-color:#FFFFFF;}body .footer .navbar ul.footer-links &gt; li &gt; a{color:#0B4965;}body .footer .navbar ul.footer-links &gt; li &gt; a:hover{color:#0B4965;}body .btn{background-color:#1EAEDB;}body .btn{color:#FFFFFF;}body .btn:hover,body .btn:focus,body .btn:active,body .open .dropdown-toggle.btn{background-color:;color:;}.navbar-nav &gt; li &gt; span{color:#3B73AF;}.navbar-nav &gt; li &gt; span:hover{color:#000000;}.navbar-nav &gt; li.expanded span:hover,.navbar-nav &gt; li.expanded.active{background-color:#EEEEEE;}.navbar-nav &gt; li &gt; span &gt; span.caret{border-bottom-color:#3B73AF;border-top-color:#3B73AF;color:#3B73AF;}.modal-body #user-register-form .form-type-password.col-md-4{width:100%;}.footer.footer-fixed-bottom{position:static;}body #resource_URL input,#method_content [data-role='method_url_container'],#method_content .url_container &gt; p &gt; span,[data-role='method_url_container'] span span span.template_param{font-family:Courier,'Courier New',monospace;}
+
+/* ]]&gt; */
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+window.jQuery || document.write("&lt;script src='/profiles/apigee/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'&gt;\x3C/script&gt;")
+//--&gt;&lt;!]]&gt;
+</script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__H5AFmq1RrXKsrazzPq_xPQPy4K0wUKqecPjczzRiTgQ__zOEzB-Rauhf2xia5BFcNc_iKIGAOa2LJe5TTXitvJiY__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__8DM-w-Efx1iPyU49KoeWqg0qtowAOtZB0HwGG6cGLXI__EQenzlsKpxxYgcUj07qgtZMf4PuOgsYtNMXh9oBsXxo__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__Oipf52Il1P6f6YKgH1-txI2p9x5EA7udueYQFlt_ogM__ATQvmPP6KyhidZXv6JCmuEMDQPRaGFuNT04yKUoi3Z8__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__6fWeeBcZKeaiDAM4xr4OEchQU55wY5MnT5Q84e5KbO0__QhikksUaShC58Ftrt5VHljsCcbb5JW-3btlqBi--I30__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__0o_AqM9whJHYkMhQcZGnRZn3QNABJF2xncgJeq6waPo__v-fwDBLwu7bsyCILKsFwt-FIpv--c01bUma_PBygR5M__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script type="text/javascript">
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"tm","theme_token":"oDFLd23pmYE8Fxi9QStPiiGuTmLYX3HhsNDCDQ-RKvw","css":{"modules\/system\/system.base.css":1,"profiles\/apigee\/themes\/bootstrap\/css\/overrides.css":1,"profiles\/apigee\/themes\/apigee_responsive\/css\/bootstrap.min.css":1,"modules\/field\/theme\/field.css":1,"profiles\/apigee\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/toc_filter\/toc_filter.css":1,"profiles\/apigee\/modules\/contrib\/views\/css\/views.css":1,"profiles\/apigee\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"profiles\/apigee\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/jgrowl\/jquery.jgrowl.min.css":1,"sites\/all\/modules\/contrib\/nicemessages\/css\/nicemessages_positions.css":1,"sites\/all\/modules\/contrib\/nicemessages\/css\/nicemessages_drupal.css":1,"profiles\/apigee\/modules\/custom\/devconnect\/smartdocs\/css\/smartdocs.css":1,"profiles\/apigee\/modules\/custom\/devconnect\/devconnect_developer_apps\/devconnect_developer_apps.css":1,"profiles\/apigee\/themes\/apigee_responsive\/css\/style.css":1,"sites\/all\/themes\/tm\/css\/tm.css":1,"0":1},"js":{"profiles\/apigee\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/apigee\/themes\/apigee_responsive\/js\/bootstrap.min.js":1,"profiles\/apigee\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/contrib\/tablesorter\/tablesortervar.js":1,"sites\/all\/modules\/contrib\/toc_filter\/toc_filter.js":1,"sites\/all\/libraries\/jgrowl\/jquery.jgrowl.min.js":1,"sites\/all\/modules\/contrib\/nicemessages\/js\/nicemessages.js":1,"sites\/all\/libraries\/tablesorter\/jquery.tablesorter.min.js":1,"sites\/all\/libraries\/tablesorter\/jquery.metadata.js":1,"sites\/all\/libraries\/tablesorter\/addons\/pager\/jquery.tablesorter.pager.js":1,"profiles\/apigee\/libraries\/jquery.selectlist\/scripts\/jquery.selectlist.min.js":1,"profiles\/apigee\/modules\/custom\/devconnect\/devconnect_developer_apps\/devconnect_developer_apps.js":1,"misc\/tableheader.js":1,"sites\/all\/modules\/custom\/ticketmaster_global_affiliate_id\/js\/tm_affiliate_ids_table.js":1,"profiles\/apigee\/themes\/apigee_responsive\/js\/global.js":1,"sites\/all\/themes\/tm\/js\/tm.js":1}},"tablesorter":{"zebra":1,"odd":"odd","even":"even"},"toc_filter_smooth_scroll_duration":"","devconnect_developer_apps":{"selectlist":"true"},"nicemessages":{"position":"center","items":[{"type":"status","content":"\u003Cdiv class=\u0022error-summary\u0022\u003EApp Updated!\u003C\/div\u003E\n","life":0,"glue":"after","speed":"normal"}]},"urlIsAjaxTrusted":{"\/search\/node":true},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"top","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});
+//--&gt;&lt;!]]&gt;
+</script>
+</head>
+<body class="html not-front logged-in no-sidebars page-user page-user- page-user-1554 page-user-apps navbar-is-static-top logo_standard">
+<div id="skip-link">
+  <a class="element-invisible element-focusable toc-filter-processed" href="#main-content">Skip to main content</a>
+</div>
+
+
+
+<!-- Breadcrumbs -->
+<!--
+  <div class="container search-container">
+    <div class="row">
+            <div class="col-xs-6 pull-right">
+        <form action="/search/node" method="post" id="search-form" accept-charset="UTF-8"><div><div class="form-wrapper form-group" id="edit-basic"><div class="input-group"><input placeholder="Search" class="search-query span2 form-control form-text" type="search" placeholder="Keyword" autocapitalize="off" autocorrect="off" id="edit-keys" name="keys" value="" size="20" maxlength="255" /><span class="input-group-btn"><button type="hidden" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div><button class="element-invisible btn btn-primary form-submit" style="display:none" type="hidden" id="edit-submit" name="op" value="Search">Search</button>
+</div><input type="hidden" name="form_build_id" value="form-8MBuvXsfL7HIJjjZsIh5VGd6ZghK1Wr_1Y7SNXG4jHA" />
+<input type="hidden" name="form_token" value="4RqSLULxgsge8_GS7nKBlkg6L2aE_NVfJgpZJEWrqR0" />
+<input type="hidden" name="form_id" value="search_form" />
+</div></form>      </div>
+    </div>
+  </div>
+<!-- Breadcrumbs -->
+<div class="master-container">
+
+
+ <!-- Header Start-->
+  <div class="row top-menu blue-slice">
+    <nav class="rainbow">
+      <div class="one nav-item"></div>
+      <div class="two nav-item"></div>
+      <div class="three nav-item"></div>
+      <div class="four nav-item"></div>
+      <div class="five nav-item"></div>
+      <div class="six nav-item"></div>
+    </nav>
+    <div class="logo col-lg-3 aside-fix">
+      <a href="http://developer.ticketmaster.com/">
+          <img src="/sites/all/themes/tm/img/header/tm-developer-logo.svg" />
+      </a>
+      <a id="menu-btn"></a>
+    </div>
+    <nav class="menu col-lg-5 col-md-5 col-sm-5 col-xs-12" id="top-menu-items">
+       <a href="/user/1554/edit" class="apgee-login">
+         epam@epam.com.ua...       </a>
+       <a href="http://developer.ticketmaster.com/products-and-docs/" class="one nav-item">Products &amp; Docs</a>
+       <a href="http://developer.ticketmaster.com/partners/" class="two nav-item">Partners</a>
+       <a href="http://developer.ticketmaster.com/support/" class="three nav-item">Support</a>
+       <a href="http://developer.ticketmaster.com/blogs/" class="four nav-item">Blogs</a>
+       <a href="http://developer.ticketmaster.com/events/" class="five nav-item">Events</a>
+       <a href="http://code.ticketmaster.com/" class="six nav-item">Open Source</a>
+        <a href="/user/me/apps" class="nav-item my-apps-nav-item split">My Apps</a>        <a href="/user/logout" class="nav-item logout-nav-item">Logout</a>
+    </nav>
+    <div class="user-control-section">
+              <a href="/user" title="" data-target="#" class="dropdown-toggle" user-mail="epam@epam.com.ua..." data-toggle="dropdown">
+          epam@epam.com.ua...        </a>
+        <ul class="dropdown-menu"><li><a href="/user/me/apps"><span class="glyphicon glyphicon-th"></span>My Apps</a></li><li><a href="/user/me/edit"><span class="glyphicon glyphicon-user"></span>Edit Profile</a></li><li><a href="/user/logout"><span class="glyphicon glyphicon-off"></span>Logout</a></li></ul>
+          </div>
+  </div>
+  <!-- Header End-->
+
+    <div class="page-content">
+    <div class="main-container container">
+      <header id="page-header" role="banner">
+              </header> <!-- /#page-header -->
+
+      <div class="row">
+
+        
+        <section class="col-sm-12">
+                                                                                                        <div class="region region-content">
+    <section class="block block-system clearfix" id="block-system-main">
+
+      
+    <div class="row">
+    <div class="col-sm-12 has-apps-wrapper">
+      <div class="row has-apps-header">
+        <div class="col-lg-8">
+          <h1>These are your apps!            <br />Explore them!</h1>
+        </div>
+                  <div class="col-lg-4 add-app-wrapper">
+            <h4 class="head">New Application</h4>
+            <p class="description">You can create your own application using our API</p>
+            <div class="add-app-button">
+              <a class="add-app" href="/user/1554/apps/add"><span class="glyphicon glyphicon-plus"></span> Add a new App</a>            </div>
+          </div>
+              </div>
+      <div class="row">
+        <div class="col-sm-12">
+                              <div id="my-apps-accordion" class="panel-group">
+            <div class="panel with-hr panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <div class="truncate">
+                                          <div class="badge">new</div>  
+                                        <a href="#my-apps-collapse0" data-parent="#my-apps-accordion" class="panel-top-title app-collapse-link toc-filter-processed" data-toggle="collapse"><strong>kggqhdie</strong></a>
+                  </div>
+                  <div class="status-label simple-label">
+                    <span class="label label-success pull-right">Approved</span>                  </div>
+                </h4>
+              </div>
+              <div class="my-apps-panels panel-collapse in" id="my-apps-collapse0" style="height: auto;">
+                <div class="panel-body">
+                  <ul class="nav nav-pills">
+                    <li class=""><a href="#keys0" data-toggle="tab" class="tabs-items toc-filter-processed">Keys</a>
+                    </li>
+                                          <li><a href="#profile0" data-toggle="tab" class="tabs-items toc-filter-processed">Products</a>
+                      </li>
+                                                              <li class="active"><a href="#details0" data-toggle="tab" class="tabs-items toc-filter-processed">Details</a>
+                    </li>
+                                          <li><a href="#affiliate_ids0" data-toggle="tab" class="tabs-items toc-filter-processed">Affiliate IDs</a>
+                      </li>
+                                                              <li class="control-btn visible-xs apigee-app-analytics"><a href="/user/1554/app-detail/b665db25-2eb3-4d7e-a912-204b5b227db5">Analytics</a></li>
+                                                              <li class="control-btn hidden-xs apigee-modal-link-edit"><a data-target="#edit-58cba3796c292" data-toggle="modal" href="/user/1554/apps/b665db25-2eb3-4d7e-a912-204b5b227db5/edit-app">Edit</a>
+                      </li>
+                      <li class="control-btn visible-xs apigee-modal-link-edit"><a data-target="#edit-58cba3796c292" data-toggle="modal" href="/user/1554/apps/b665db25-2eb3-4d7e-a912-204b5b227db5/edit-app">Edit</a>
+                      </li>
+                                                              <li class="control-btn hidden-xs apigee-modal-link-delete"><a data-target="#delete-58cba3796c292" data-toggle="modal" href="/user/1554/apps/b665db25-2eb3-4d7e-a912-204b5b227db5/delete">Delete</a>
+                      </li>
+                      <li class="control-btn visible-xs apigee-modal-link-delete"><a data-target="#delete-58cba3796c292" data-toggle="modal" href="/user/1554/apps/b665db25-2eb3-4d7e-a912-204b5b227db5/delete">Delete</a>
+                      </li>
+                                                              <li class="control-btn hidden-xs apigee-app-analytics"><a href="/user/1554/app-detail/b665db25-2eb3-4d7e-a912-204b5b227db5">Analytics</a></li>
+                                      </ul>
+                                      <!-- Edit Modal -->
+                    <div tabindex="-1" id="edit-58cba3796c292" class="modal edit fade">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                            <div id="edit-58cba3796c292-title" class="modal-title">Edit Application</div>
+                          </div>
+                          <div class="modal-body"></div>
+                          <button data-dismiss="modal" class="btn btn-default close-modal-btn" type="button">Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                                    <!-- Delete Modal -->
+                                      <div tabindex="-1" id="delete-58cba3796c292" class="modal fade">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                            <h4 id="delete-58cba3796c292-title" class="modal-title">Delete kggqhdie</h4>
+                          </div>
+                          <div class="modal-body"></div>
+                          <div class="modal-footer"></div>
+                        </div>
+                      </div>
+                    </div>
+                                    <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade" id="keys0">
+                      <div class="panel panel-default">
+
+                                                  <p class="panel-desc">Below are keys you can use to access the API products associated with this application <em><span class="text-muted">(kggqhdie)</span></em>. The actual keys need to be approved <em>and</em> approved for an <em>API product</em> to be capable of accessing any of the URIs defined in the API product.</p>
+                                                <div class="table-responsive">
+                          <table style="border:0;" class="table">
+                            <tbody>
+                            <tr>
+                              <td class="key">
+                                <strong>Consumer Key</strong>
+                              </td>
+                              <td>
+                              <span class="api-shared-key">FWWT9FRNDEXFu1eRZKqo1kNGK8PAMeGT</span>
+                                                                                              </td>
+                            </tr>
+                            <tr>
+                              <td class="key">
+                                <strong>Consumer Secret</strong>
+                              </td>
+                              <td>
+                                <span "="">9Rsyogz6MVsmhVYP</span>
+                              </td>
+                            </tr>
+                                                          <tr>
+                                <td class="key">
+                                  <strong>Key Issued</strong>
+                                </td>
+                                <td>Fri, 03/17/2017 - 08:50</td>
+                              </tr>
+                              <tr>
+                                <td class="key">
+                                  <strong>Key Expires</strong>
+                                </td>
+                                <td>Never</td>
+                              </tr>
+                                                        </tbody>
+                          </table>
+                        </div><!-- /table-responsive -->
+                      </div><!-- /panel -->
+                    </div><!-- /keys0 -->
+                                          <div class="tab-pane fade" id="profile0">
+                                                  <div class="panel panel-default">
+                            <div class="panel-heading with-bg">API Product:                              <strong>OAuth Product</strong>
+                            </div>
+                            <div class="table-responsive">
+                              <table style="border:0;" class="table">
+                                <tbody>
+                                <tr>
+                                  <td class="key">
+                                    <strong>Status</strong>
+                                  </td>
+                                  <td><span class="label label-success">Approved</span></td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <br />
+                                                  <div class="panel panel-default">
+                            <div class="panel-heading with-bg">API Product:                              <strong>Public APIs</strong>
+                            </div>
+                            <div class="table-responsive">
+                              <table style="border:0;" class="table">
+                                <tbody>
+                                <tr>
+                                  <td class="key">
+                                    <strong>Status</strong>
+                                  </td>
+                                  <td><span class="label label-success">Approved</span></td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <br />
+                                              </div>
+                                                              <div class="tab-pane fade active in" id="details0">
+                      <div class="panel panel-default">
+                        <div class="panel-heading with-bg">
+                          <strong>kggqhdie’s Details</strong>
+                        </div>
+                        <div class="table-responsive">
+                          <table style="border:0;" class="table">
+                            <tbody>
+                            <tr>
+                              <td class="key">
+                                <strong>Application Name</strong>
+                              </td>
+                              <td>kggqhdie</td>
+                            </tr>
+                                                          <tr>
+                                <td class="key">
+                                  <strong>API Products</strong>
+                                </td>
+                                <td>
+                                  <ul style="margin:0;padding:0;">
+                                                                          <li style="margin:0;padding:0;list-style-type:none;">OAuth Product</li>
+                                                                          <li style="margin:0;padding:0;list-style-type:none;">Public APIs</li>
+                                                                      </ul>
+                                </td>
+                              </tr>
+                                                                                                                  <tr>
+                                <td class="key">
+                                  <strong>Callback URL</strong>
+                                </td>
+                                <td>https://oauth.ticketmaster.com</td>
+                              </tr>
+                                                        </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                                          <div class="tm-affiliate-ids tab-pane fade" id="affiliate_ids0">
+                        <div class="panel panel-default">
+                          <div class="table-responsive">
+<table class="sticky-header" style="position: fixed; top: 0px; left: 0px; visibility: hidden;"><thead style="display: block;"><tr><th class="providers-head">Providers</th><th class="affiliate-countries-head">Countries</th><th class="affiliate-ids-head">Affiliate IDs</th> </tr></thead></table><table class="tm-affiliate-ids-table table table-hover table-striped sticky-enabled tableheader-processed sticky-table">
+ <thead><tr><th class="providers-head header">Providers</th><th class="affiliate-countries-head header">Countries</th><th class="affiliate-ids-head">Affiliate IDs</th> </tr></thead>
+<tbody>
+ <tr><td class="providers"><span class="provider-name">Affiliate Window</span>
+<img alt="" src="https://developer-acct.ticketmaster.com/sites/default/files/styles/tm_provider_logo/public/affiliate_window_logo.png?itok=qDv6VkJS" class="img-responsive" typeof="foaf:Image" /></td><td class="affiliate-countries"><span>United Kingdom</span>
+<span>Ireland</span>
+</td><td class="affiliate-ids"><span>2313123232</span>
+</td> </tr>
+ <tr><td class="providers"><span class="provider-name">Zanox</span>
+<img alt="" src="https://developer-acct.ticketmaster.com/sites/default/files/styles/tm_provider_logo/public/zanox_logo.png?itok=_9-QiZEe" class="img-responsive" typeof="foaf:Image" /></td><td class="affiliate-countries"><span>New Zealand</span>
+</td><td class="affiliate-ids"><span>212132132</span>
+</td> </tr>
+</tbody>
+</table>
+</div>
+                        </div>
+                      </div>
+                                        <div class="tab-pane fade" id="analytics0">
+                                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+                                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+  (
+    function () {
+      function listener(event) {
+        event.source.postMessage({
+          "key": document.getElementsByClassName("api-shared-key")[0].textContent.trim(),
+          "email": document.querySelector("[user-mail]")
+                           .getAttribute("user-mail")
+        }, event.origin);
+
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("message", listener);
+      }
+      else {
+        // IE8
+        window.attachEvent("onmessage", listener);
+      }
+    }
+  )();
+</script>
+
+
+</section> <!-- /.block -->
+  </div>
+        </section>
+
+        
+      </div>
+          </div>
+  </div>
+  <div id="push"></div>
+
+  <!-- Footer Start -->
+    <div class="with-bg xs-center slice-top-right" id="footer-white">
+      <div class="row footer-nav">
+        <div class="row-container">
+          <ul class="menu nav"><div class="col-xs-12 col-sm-2"><a href="http://developer.ticketmaster.com/products-and-docs"><h4>Products &amp; Docs</h4>
+</a><ul><li><a href="http://developer.ticketmaster.com/products-and-docs/apis/getting-started">APIs</a></li>
+<li><a href="http://developer.ticketmaster.com/products-and-docs/sdks">SDKs</a></li>
+<li><a href="http://developer.ticketmaster.com/products-and-docs/widgets">Widgets</a></li>
+<li><a href="http://developer.ticketmaster.com/products-and-docs/tutorials">Tutorials</a></li>
+</ul></div>
+<div class="col-xs-12 col-sm-2"><a href="http://developer.ticketmaster.com/partners"><h4>Partners</h4>
+</a><ul><li><a href="http://developer.ticketmaster.com/partners/distribution-partners">Distribution Partners</a></li>
+<li><a href="http://developer.ticketmaster.com/partners/certified-partners">Certified Partners</a></li>
+<li><a href="http://developer.ticketmaster.com/partners/startups-and-developers">Startups &amp; Developers</a></li>
+</ul></div>
+<div class="col-xs-12 col-sm-2"><a href="http://developer.ticketmaster.com/support"><h4>Support</h4>
+</a><ul><li><a href="http://developer.ticketmaster.com/support/faq">FAQ</a></li>
+<li><a href="http://developer.ticketmaster.com/support/terms-of-use">General Terms of Use</a></li>
+<li><a href="http://developer.ticketmaster.com/support/contact-us">Contact Us</a></li>
+<li><a href="http://developer.ticketmaster.com/support/terms-of-use/partner">Partner API Terms of Use</a></li>
+<li><a href="http://developer.ticketmaster.com/support/branding-guide">Branding Guide</a></li>
+</ul></div>
+<div class="col-xs-12 col-sm-2"><a href="http://developer.ticketmaster.com/blogs"><h4>Blogs</h4>
+</a><ul><li><a href="http://tech.ticketmaster.com">Tech Blog</a></li>
+<li><a href="https://medium.com/ticketmaster-tech">Medium Publication</a></li>
+</ul></div>
+<div class="col-xs-12 col-sm-2"><a href="http://developer.ticketmaster.com/events"><h4>Events</h4>
+</a><ul><li><a href="http://developer.ticketmaster.com/events/#/upcoming/hackathon" class="toc-filter-processed">hackathons</a></li>
+<li><a href="http://developer.ticketmaster.com/events/#/upcoming/devjam" class="toc-filter-processed">devjam</a></li>
+</ul></div>
+<div class="col-xs-12 col-sm-2"><a href="http://code.ticketmaster.com"><h4>Open Source</h4>
+</a><ul><li><a href="http://code.ticketmaster.com/#android-projects" class="toc-filter-processed">Android</a></li>
+<li><a href="http://code.ticketmaster.com/#backend-projects" class="toc-filter-processed">Backend</a></li>
+<li><a href="http://code.ticketmaster.com/#web-projects" class="toc-filter-processed">Web</a></li>
+<li><a href="http://code.ticketmaster.com/#iOS-projects" class="toc-filter-processed">iOS</a></li>
+</ul></div>
+</ul>        </div>
+      </div>
+      <div style="margin-bottom: 10px;" class="row bottom-logo">
+        <div class="row-container">
+           <div class="col-xs-12">
+             <a class="footer-img-c" href="http://www.ticketmaster.com">
+               <img src="/sites/all/themes/tm/img/footer/ticketmaster-logo-white.svg" class="footer-img" />
+             </a>
+             <span class="footer-text">© 1976–2017 Ticketmaster. All rights reserved.</span>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End-->
+</div>tmaster
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-72344127-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script src="https://developer-acct.ticketmaster.com/sites/default/files/advagg_js/js__Zo2s686sT6KqCZ4KSs2ZdHZymA-t6jpXSefJWMLn-cM__5pWByCSRwqbOBJaMPsumH-tFSQOAyWkJ9hD4ugidjsY__UjdjpcG4uV8oJQtdPSIDuLjt1MzCJi-9ms9ZpbiLZM4.js" type="text/javascript"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0712dc03aa","applicationID":"9191051","transactionName":"MlUDMRACDEdYVhYICgsfIAYWCg1aFlgHPg0EXgUJBxE=","queueTime":0,"applicationTime":1675,"atts":"HhIAR1gYH0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<div id="jGrowl" class="center jGrowl"><div class="jGrowl-notification"></div><div class="jGrowl-notification alert ui-state-highlight ui-corner-all status" style="display: block;"><button class="jGrowl-close">×</button><div class="jGrowl-header"></div><div class="jGrowl-message"><div class="error-summary">App Updated!</div>
+</div></div></div></body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1365" height="1700"></canvas></html>
